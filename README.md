@@ -34,10 +34,10 @@ in which the calibration target has been excluded.
 a `digitization process/method/technique/workflow`.  For example, a book item  
 can be digitized using various `digitization workflows`, e.g., the `preservation`  
 workflow, the `access` workflow, the `bookeye-4` workflow, all of which result  
-in a different set of files in the resulting `digital object`.
+in a different set of files in the `digital object`.
 
 ### Template Notation
-* naming templates are throughout this documentation
+* naming templates are used throughout this documentation
 * a template is a string that indicates how something should be named
 * angle brackets `<...>` indicate a REQUIRED value
 * square brackets `[]` indicate an OPTIONAL value
