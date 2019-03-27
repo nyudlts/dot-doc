@@ -34,7 +34,7 @@ the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye
 imaging projects, the `dmaker file` contains a cropped version of the `master file`  
 in which the calibration target has been excluded.
 * `digital object type variant`: the name for the combination of a `DOT` and  
-a `digitization process/method/technique/workflow`.  For example, a book item
+a `digitization process/method/technique/workflow`.  For example, a book item  
 can be digitized using various `digitization workflows`, e.g., the `preservation`  
 workflow, the `access` workflow, the `bookeye-4` workflow, all of which result  
 in a different set of files in the resulting `digital object`.
@@ -48,16 +48,20 @@ in a different set of files in the resulting `digital object`.
 * any characters outside of brackets must be present as written
 
 ### Directory Naming
-* every digital object is assigned a `digitization id (digi_id)`
-* the first time a `digital object` is created, all files for the   
-`digital object` MUST be stored in a directory named `<digi_id>`,  
-e.g., `nyu_aco123456/`
-* if some files in the original `digital object` need to be replaced,  
-the replacement files MUST be stored in a directory named `<digi_id>_patch`,  
-e.g., `nyu_aco123456_patch/`
-* if the original `digital object` needs to be replaced completely, the
-files for `replacement digital object` MUST be stored in a directory named  
-`<digi_id>_redo`, e.g., `nyu_aco123456_redo/`
-* if there are files that should be added to the original `digital object`,   
-e.g., searchable PDF files, `.srt` files, the files MUST be stored in a  
-directory named `<digi_id>_add`, e.g., `nyu_aco123456_add/`
+* **new digital objects**
+  * the first time a `digital object` is created, all files for the   
+  `digital object` MUST be stored in a directory named `<digi_id>`,  
+  e.g., `nyu_aco123456/`
+* **patches**
+  * if some files in the original `digital object` need to be replaced,  
+  the replacement files MUST be stored in a directory named `<digi_id>_patch`,  
+  e.g., `nyu_aco123456_patch/`
+* **redos**
+  * if the original `digital object` needs to be replaced completely, the files  
+  for the `replacement digital object` MUST be stored in a directory named  
+  `<digi_id>_redo`, e.g., `nyu_aco123456_redo/`
+* **additions**
+  * if there are files that should be added to the original `digital object`,   
+  e.g., searchable PDF files, `.srt` files, the files MUST be stored in a  
+  directory named `<digi_id>_add`, e.g., `nyu_aco123456_add/`
+---
