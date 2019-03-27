@@ -9,7 +9,7 @@
     * image files for the `item` pages
     * a `session target` file
     * an `eoc` file  
-  * all files MUST conform to the [`preservation` naming template](./preservation-naming-template.md)
+  * all file names MUST conform to the [`preservation` naming template](./preservation-naming-template.md)
 
 ##### `access` workflow
   * COMING SOON!
