@@ -3,10 +3,10 @@
 ### Directory Naming Requirements
 * Please refer to the [README.md](./README.md) file
 
-### `book` Variants:
-* [`preservation`](#preservation)
+### `book` variants:
+* [`preservation` digitization workflow](#preservation-digitization-workflow)
 * `access`
 * `bookeye-4`
 
 
-###`preservation`
+### `preservation` digitization workflow
