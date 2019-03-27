@@ -1,11 +1,8 @@
 ## DOCUMENT STATUS: WORK-IN-PROGRESS
 
 ## Digital Object Type Documentation
-This repository contains files describing the digital object types supported  
+This repository contains files describing the digital object types supported   
 by New York University's Digital Library Technology Services department.
-
-### Overview
-This repository is organized as a set of files, one file per digital object type.
 
 #### Digital Object Types (`DOT`s)
 * `book`  : the `DOT` created when digitizing a bound volume
