@@ -5,8 +5,14 @@ This repository contains files that describe the digital object types supported
 by New York University's Digital Library Technology Services Department.
 
 ### Overview
-This repository is organized as a set of files, one file per  
-digital object type.
+This repository is organized as a set of files, one file per digital object type.
+
+#### Digital Object Types (`DOT`s)
+* `book`  : the `DOT` created when digitizing a bound volume
+  * [documentation link](./book.md)
+* `image set` : the `DOT` created when digitizing an unbound `item`,  
+e.g., a folder of documents **[is this definition confusing?]:**
+  * documentation link: COMING SOON!
 
 ### Terms Used
 * `item`: a (physical) object being digitized
@@ -19,7 +25,7 @@ e.g., `book`,`image set`
 * `environment of creation file (eoc)`: a file that contains information about  
 the `digitization station`
 * `digitization process/method/technique/workflow(?)`**[need a term here!]:**  
-the strategy used to digitize the item, e.g., `preservation`, `access`, `bookeye-4`
+the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye-4`
 * `master file`: a file used for long-term storage/preservation of the `digital object`.  
   In imaging projects, the `master file` includes a calibration target alongside  
   the content being imaged.  
@@ -33,12 +39,7 @@ can be digitized using various `digitization workflows`, e.g., the `preservation
 workflow, the `access` workflow, the `bookeye-4` workflow, all of which result  
 in a different set of files in the resulting `digital object`.
 
-#### Digital Object Types (`DOT`s)
-* `book`  : the `DOT` created when digitizing a bound volume
-* `image set` : the `DOT` created when digitizing an unbound `item`,  
-e.g., a folder of documents **[is this definition confusing?]:**
-
-#### Template Notation
+### Template Notation
 * naming templates are throughout this documentation
 * a template is a string that indicates how something should be named
 * angle brackets `<...>` indicate a REQUIRED value
@@ -46,7 +47,7 @@ e.g., a folder of documents **[is this definition confusing?]:**
 * a vertical bar `|` indicates alternate values
 * any characters outside of brackets must be present as written
 
-#### Directory Naming
+### Directory Naming
 * every digital object is assigned a `digitization id (digi_id)`
 * the first time a `digital object` is created, all files for the   
 `digital object` MUST be stored in a directory named `<digi_id>`,  
@@ -60,6 +61,3 @@ files for `replacement digital object` MUST be stored in a directory named
 * if there are files that should be added to the original `digital object`,   
 e.g., searchable PDF files, `.srt` files, the files MUST be stored in a  
 directory named `<digi_id>_add`, e.g., `nyu_aco123456_add/`
-
-#### DOT-specific Documentation
-* [`book`](./book.md)
