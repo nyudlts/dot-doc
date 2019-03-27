@@ -16,11 +16,20 @@
     * `nyu_aco123456_000456_02_m.tif`
     * `nyu_aco123456_000456_02_d.tif`
   * oversized:
-    * `nyu_aco123456_000321_01_m.tif`
-    * `nyu_aco123456_000321_02_m.tif`
-    * `nyu_aco123456_000321_03_m.tif`
-    * `nyu_aco123456_000321_04_m.tif`
-    * `nyu_aco123456_000321_d.tif`
+    * e.g., oversized page # 321 requiring 4 `master` files
+      * `nyu_aco123456_000321_01_m.tif`
+      * `nyu_aco123456_000321_02_m.tif`
+      * `nyu_aco123456_000321_03_m.tif`
+      * `nyu_aco123456_000321_04_m.tif`
+      * `nyu_aco123456_000321_d.tif`
+    * e.g., oversized, two-sided insert right after page # 722 requiring  
+    two `master` files per side
+      * `nyu_aco123456_000722_01_01_m.tif`
+      * `nyu_aco123456_000722_01_02_m.tif`
+      * `nyu_aco123456_000722_01_d.tif`
+      * `nyu_aco123456_000722_02_01_m.tif`
+      * `nyu_aco123456_000722_02_02_m.tif`
+      * `nyu_aco123456_000722_02_d.tif`  
   * session target:
     * `nyu_aco123456_target_m.tif`
   * EOC file:
@@ -28,13 +37,14 @@
     * `nyu_aco001871_eoc.csv`
 
 ### terms:
-* numbered pages: images of a pages that have a number printed on it
-* front matter pages: images of pages that precede the numbered pages
-* back matter pages: images of pages that follow the numbered pages
-* insert pages: images of pages that do not have numbers on them that  
+* **numbered pages**: images of pages that have numbers printed on them
+* **front matter pages**: images of pages that precede the numbered pages
+* **back matter pages**: images of pages that follow the numbered pages
+* **insert pages**: images of pages that do not have numbers on them and  
 appear between numbered pages
-* oversized pages: images of pages that require multiple `master` files  
-to capture and are stitched together into a single `dmaker` file
+* **oversized pages**: images of pages that require multiple `master` files  
+to capture and the `master` files are stitched together into a single   
+`dmaker` file
 
 ### template
 * generic template:
@@ -51,7 +61,7 @@ to capture and are stitched together into a single `dmaker` file
 * **numbered pages:**
   * template: `<digi_id>_<page number>_<role>.tif`
     * `page number`: a **six digit** integer padded with leading zeros that  
-    matches the page number in the item
+    matches the page number printed on the page
 * **front matter pages:**
   * template: `<digi_id>_fr<sequence number>_<role>.tif`
     * `sequence number`: a **two digit** integer padded with leading zeros
@@ -63,7 +73,7 @@ to capture and are stitched together into a single `dmaker` file
 * **inserts:**
   * template: `<digi_id>_<page number>_<sequence number>_<role>.tif`
     * `page number`: the **six digit** integer padded with leading zeros that  
-    matches the last numbered page in the item
+    matches the last numbered page before the insert
     * `sequence number`: a **two digit** integer padded with leading zeros  
     that indicates the sequence of the page in the "insert" section
       * can use three digits when needed
@@ -71,14 +81,15 @@ to capture and are stitched together into a single `dmaker` file
   * `dmaker` template: `<digi_id>_<page number>_d.tif`
     * `page number`: a **six digit** integer padded with leading zeros that  
     matches the page number in the item
-  * `master` template: `<digi_id>_<page number>_<sequence number>_<role>.tif`
+  * `master` template: `<digi_id>_<page number>_<sequence number>_m.tif`
     * `sequence number`: a **two digit** integer padded with leading zeros  
     that indicates that this is part of an oversized page
 * **session target:**
   * `dmaker` template: N/A
   * `master` template: `<digi_id>_target_m.tif`
 * **EOC file:**
-  * template: `<digitization station name>-EOC.csv`
-  * template: `<digitization station name>_EOC.csv`
-  * template: `<digitization station name>_eoc.csv`
-  * template: `<digi_id>_eoc.csv`
+  * the following are valid EOC templates:
+    * template: `<digitization station name>-EOC.csv`
+    * template: `<digitization station name>_EOC.csv`
+    * template: `<digitization station name>_eoc.csv`
+    * template: `<digi_id>_eoc.csv`
