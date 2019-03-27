@@ -18,7 +18,7 @@ e.g., `book`,`image set`
 * `digitization station`: the set of equipment used to digitize an `item`
 * `environment of creation file (eoc)`: a file that contains information about  
 the `digitization station`
-* `digitization process/method/technique/workflow(?)`**[help: need a term here!]:**  
+* `digitization process/method/technique/workflow(?)`**[need a term here!]:**  
 the strategy used to digitize the item, e.g., `preservation`, `access`, `bookeye-4`
 * `master file`: a file used for long-term storage/preservation of the `digital object`.  
   In imaging projects, the `master file` includes a calibration target alongside  
@@ -36,13 +36,15 @@ in a different set of files in the resulting `digital object`.
 #### Digital Object Types (`DOT`s)
 * `book`  : the `DOT` created when digitizing a bound volume
 * `image set` : the `DOT` created when digitizing an unbound `item`,  
-e.g., a folder of documents **[help: is this definition confusing?]:**
+e.g., a folder of documents **[is this definition confusing?]:**
 
 #### Template Notation
 * naming templates are throughout this documentation
 * a template is a string that indicates how something should be named
 * angle brackets `<...>` indicate a REQUIRED value
 * square brackets `[]` indicate an OPTIONAL value
+* a vertical bar `|` indicates alternate values
+* any characters outside of brackets must be present as written
 
 #### Directory Naming
 * every digital object is assigned a `digitization id (digi_id)`
