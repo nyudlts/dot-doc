@@ -4,25 +4,27 @@
 This repository contains files describing the digital object types supported   
 by New York University's Digital Library Technology Services department.
 
-#### Digital Object Types (`DOT`s) and Digitization Workflows
-* `book`  : the `DOT` created when digitizing a bound volume
-  * [preservation workflow link](./preservation-naming-template.md)
+## Digital Object Types (`DOT`s) and Digitization Workflows
 * `image set` : the `DOT` created when digitizing an unbound `item`,  
 e.g., a folder of documents **[is this definition confusing?]:**
   * documentation link: COMING SOON!
 
-#### Digitization Workflows
-## `book`:
-### `preservation` workflow:
-  * a `book` created using the `preservation` workflow MUST contain the following:
-    * `master` and `dmaker` image files for the `item` pages
-    * a `session target` file
-    * an `eoc` file  
-    * all file names MUST conform to the [`preservation workflow` naming template](./preservation-naming-template.md)
-  ### `access` workflow:
-    * a `book` created using the `access` workflow MUST contain the following:
-      * `dmaker` image files for the `item` pages
-      * all file names MUST conform to the [`access workflow` naming template](./access-naming-template.md)
+### `book`  
+  * the `DOT` created when digitizing a bound volume
+  * a `book` can be created using one of several digitization workflows:
+    * `preservation` workflow:
+      * a `book` created using the `preservation` workflow MUST contain the following:
+        * `master` and `dmaker` image files for the `item` pages
+        * a `session target` file
+        * an `eoc` file  
+        * all file names MUST conform to the [`preservation workflow` naming template](./preservation-naming-template.md)
+
+    * `access` workflow:
+      * a `book` created using the `access` workflow MUST contain the following:
+        * `dmaker` image files for the `item` pages
+        * all file names MUST conform to the [`access workflow` naming template](./access-naming-template.md)
+        * a `session target` MUST NOT be present
+        * an `eoc` file NUST NOT be present
 
 
 ### Terms Used
