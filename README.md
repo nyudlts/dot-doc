@@ -22,9 +22,10 @@ e.g., a folder of documents **[is this definition confusing?]:**
     * `access` workflow:
       * a `book` created using the `access` workflow MUST contain the following:
         * `dmaker` image files for the `item` pages
+        * all file names MUST conform to the [`access workflow` naming template](./access-naming-template.md)
       * a `book` created using the `access` workflow **MUST NOT** contain the following:
-        * ~~a `session target`~~ 
-        * ~~an `eoc` file~~ 
+        * a ~~`session target`~~ 
+        * an ~~`eoc` file~~ 
 
 
 ### Terms Used
