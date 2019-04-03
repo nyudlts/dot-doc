@@ -16,20 +16,20 @@
     in the item
 
 * all filenames must be numbered sequentially, with no breaks sequence numbers
-  * e.g., 
-  ```
-  # OK
-  ...
-  nyu_aco000123.tif
-  nyu_aco000124.tif
-  nyu_aco000125.tif
-  ...
+  * i.e., 
+    ```
+    # OK
+    ...
+    nyu_aco000123.tif
+    nyu_aco000124.tif
+    nyu_aco000125.tif
+    ...
 
-  # BAD (missing 000724)
-  ...
-  nyu_aco000723.tif
-  nyu_aco000725.tif
-  nyu_aco000726.tif
-  ...
-  ```
+    # BAD (missing 000724)
+    ...
+    nyu_aco000723.tif
+    nyu_aco000725.tif
+    nyu_aco000726.tif
+    ...
+    ```
 
