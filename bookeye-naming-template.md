@@ -7,6 +7,7 @@
   * `nyu_aco123456_0000001.tif`  # this is the session master!
   * `nyu_aco123456_0000002.tif`  # this is the first image  of the item
   * `nyu_aco123456_0000003.tif`  # this is the second image of the item
+  * `...`
 
 ### template
   * generic template:
@@ -24,7 +25,7 @@
   * <code><digi_id><b>_000001.tif</b></code>
 * **EOC file:**
   * the following are valid EOC templates:
-    * template: <code><digitization station name><b>-EOC.csv</b></code>
-    * template: <code><digitization station name><code><b>_EOC.csv</b></code>
-    * template: <code><digitization station name><code><b>_eoc.csv</b></code>
+    * template: <code>&lt;digitization station name&gt;<b>-EOC.csv</b></code>
+    * template: <code>&lt;digitization station name&gt;<code><b>_EOC.csv</b></code>
+    * template: <code>&lt;digitization station name&gt;<code><b>_eoc.csv</b></code>
     * template: <code><digi_id><b>_eoc.csv</b></code>
