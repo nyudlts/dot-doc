@@ -13,19 +13,24 @@ e.g., a folder of documents **[is this definition confusing?]:**
   * the `DOT` created when digitizing a bound volume
   * a `book` can be created using one of several digitization workflows:
     * `preservation` workflow:
-      * a `book` created using the `preservation` workflow MUST contain the following:
+      * a `book` created using the `preservation` workflow **MUST** contain the following:
         * `master` and `dmaker` image files for the `item` pages
         * a `session target` file
         * an `eoc` file  
         * all file names MUST conform to the [`preservation workflow` naming template](./preservation-naming-template.md)
-
     * `access` workflow:
-      * a `book` created using the `access` workflow MUST contain the following:
+      * a `book` created using the `access` workflow **MUST** contain the following:
         * `dmaker` image files for the `item` pages
         * all file names MUST conform to the [`access workflow` naming template](./access-naming-template.md)
       * a `book` created using the `access` workflow **MUST NOT** contain the following:
         * a ~~`session target`~~ 
         * an ~~`eoc` file~~ 
+    * `bookeye` workflow:
+      * a `book` created using the `bookeye` workflow **MUST** contain the following:
+        * `dmaker` image files for the `item` pages
+        * all file names MUST conform to the [`bookeye workflow` naming template](./bookeye-naming-template.md)
+        * a `session target`
+        * an `eoc` file
 
 
 ### Terms Used
