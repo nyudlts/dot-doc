@@ -63,7 +63,7 @@
 
 #### specific templates
 * **numbered pages:**
-  * template: `<digi_id>_<page number>_<role>`<code><b>.tif</b></code>
+  * template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;role&gt;<b>.tif</b></code>
     * <code>page number<code>: a **six digit** integer padded with leading zeros that  
     matches the page number printed on the page
 * **front matter pages:**
