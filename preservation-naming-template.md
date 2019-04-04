@@ -88,7 +88,7 @@
   * if the oversized page has a page number on it:
     * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\<b>_d.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
-    * `master` template: <code>&lt;digi_id&gt;_&lt;page number&gt;_&lt;sequence number&gt;<b>\_m.tif</b></code>
+    * `master` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;sequence number&gt;<b>\_m.tif</b></code>
       * `sequence number`: a **two digit** integer padded with leading zeros that indicates that this is part of an oversized page
 * **session target:**
   * `dmaker` template: N/A
