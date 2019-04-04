@@ -102,8 +102,8 @@
         * can use three digits when needed
       * `master file number`: a **two digit** integer padded with leading zeros that indicates that this master file is part of an oversized page
 * **session target:**
-  * `dmaker` template: N/A
-  * `master` template: <code>&lt;digi_id&gt;_target_m.tif`
+  * `master` template: <code>&lt;digi_id&gt;<b>\_target_m.tif</b></cpde>
+  * `dmaker` template: this is not applicable (there are no `dmaker` files for session target masters)
 * **EOC file:**
   * the following are valid EOC templates:
     * template: <code>&lt;digitization station name&gt;\<b>-EOC.csv</b></code>
