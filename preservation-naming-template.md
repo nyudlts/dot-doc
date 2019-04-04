@@ -85,18 +85,18 @@
     that indicates the sequence of the page in the "insert" section
       * can use three digits when needed
 * **oversized pages:**
-  * <code>dmaker</code> template: <code>&lt;digi_id&gt;_&lt;page number&gt;_d.tif</code>
-    * <code>page number<code>: a **six digit** integer padded with leading zeros that  
+  * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_d.tif</code>
+    * `page number`: a **six digit** integer padded with leading zeros that  
     matches the page number in the item
-  * <code>master</code> template: <code>&lt;digi_id&gt;_&lt;page number&gt;_&lt;sequence number&gt;_m.tif</code>
-    * <code>sequence number<code>: a **two digit** integer padded with leading zeros  
+  * `master` template: `&lt;digi_id&gt;_&lt;page number&gt;_&lt;sequence number&gt;_m.tif`
+    * `sequence number`: a **two digit** integer padded with leading zeros  
     that indicates that this is part of an oversized page
 * **session target:**
-  * <code>dmaker</code> template: N/A
-  * <code>master</code> template: <code>&lt;digi_id&gt;_target_m.tif</code>
+  * `dmaker` template: N/A
+  * `master` template: <code>&lt;digi_id&gt;_target_m.tif`
 * **EOC file:**
   * the following are valid EOC templates:
-    * template: <code>&lt;digitization station name&gt;-EOC.csv</code>
+    * template: <code>&lt;digitization station name&gt;\<b>-EOC.csv</b></code>
     * template: <code>&lt;digitization station name&gt;_EOC.csv</code>
     * template: <code>&lt;digitization station name&gt;_eoc.csv</code>
     * template: <code>&lt;digi_id&gt;_eoc.csv</code>
