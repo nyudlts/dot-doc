@@ -1,38 +1,38 @@
-## <code>preservation</code> workflow naming template
+## `preservation` workflow naming template
 ### examples: ([template details](#template) below)
   * front matter:
-    * <code>nyu_aco123456_fr01_m.tif</code>
-    * <code>nyu_aco123456_fr01_d.tif</code>
-    * <code>nyu_aco123456_fr157_m.tif</code>
-    * <code>nyu_aco123456_fr157_d.tif</code>
+    * `nyu_aco123456_fr01_m.tif`
+    * `nyu_aco123456_fr01_d.tif`
+    * `nyu_aco123456_fr157_m.tif`
+    * `nyu_aco123456_fr157_d.tif`
   * numbered pages:
-    * <code>nyu_aco123456_000123_m.tif</code>
-    * <code>nyu_aco123456_000123_d.tif</code>
+    * `nyu_aco123456_000123_m.tif`
+    * `nyu_aco123456_000123_d.tif`
   * back matter:
-    * <code>nyu_aco123456_bk97_m.tif</code>
-    * <code>nyu_aco123456_bk97_d.tif</code>
-    * <code>nyu_aco123456_bk191_m.tif</code>
-    * <code>nyu_aco123456_bk191_d.tif</code>
+    * `nyu_aco123456_bk97_m.tif`
+    * `nyu_aco123456_bk97_d.tif`
+    * `nyu_aco123456_bk191_m.tif`
+    * `nyu_aco123456_bk191_d.tif`
   * inserts:
-    * <code>nyu_aco123456_000973_01_m.tif</code>
-    * <code>nyu_aco123456_000973_01_d.tif</code>
-    * <code>nyu_aco123456_000973_02_m.tif</code>
-    * <code>nyu_aco123456_000973_02_d.tif</code>
+    * `nyu_aco123456_000973_01_m.tif`
+    * `nyu_aco123456_000973_01_d.tif`
+    * `nyu_aco123456_000973_02_m.tif`
+    * `nyu_aco123456_000973_02_d.tif`
   * oversized:
-    * e.g., oversized page # 321 requiring 4 <code>master</code> files
-      * <code>nyu_aco123456_000321_01_m.tif</code>
-      * <code>nyu_aco123456_000321_02_m.tif</code>
-      * <code>nyu_aco123456_000321_03_m.tif</code>
-      * <code>nyu_aco123456_000321_04_m.tif</code>
-      * <code>nyu_aco123456_000321_d.tif</code>
+    * e.g., oversized page # 321 requiring 4 `master` files
+      * `nyu_aco123456_000321_01_m.tif`
+      * `nyu_aco123456_000321_02_m.tif`
+      * `nyu_aco123456_000321_03_m.tif`
+      * `nyu_aco123456_000321_04_m.tif`
+      * `nyu_aco123456_000321_d.tif`
     * e.g., oversized, two-sided insert right after page # 722 requiring  
-    two <code>master</code> files per side
-      * <code>nyu_aco123456_000722_01_01_m.tif</code>
-      * <code>nyu_aco123456_000722_01_02_m.tif</code>
-      * <code>nyu_aco123456_000722_01_d.tif</code>
-      * <code>nyu_aco123456_000722_02_01_m.tif</code>
-      * <code>nyu_aco123456_000722_02_02_m.tif</code>
-      * <code>nyu_aco123456_000722_02_d.tif</code>  
+    two `master` files per side
+      * `nyu_aco123456_000722_01_01_m.tif`
+      * `nyu_aco123456_000722_01_02_m.tif`
+      * `nyu_aco123456_000722_01_d.tif`
+      * `nyu_aco123456_000722_02_01_m.tif`
+      * `nyu_aco123456_000722_02_02_m.tif`
+      * `nyu_aco123456_000722_02_d.tif`  
   * session target:
     * `nyu_aco123456_target_m.tif`
   * EOC file:
@@ -46,9 +46,9 @@
   * **insert pages**: images of pages that do not have numbers on them and   
     appear between numbered pages
   ![](./insert-example.png)
-  * **oversized pages**: images of pages that require multiple <code>master</code> files  
-    to capture and the <code>master</code> files are stitched together into a single   
-    <code>dmaker</code> file
+  * **oversized pages**: images of pages that require multiple `master` files  
+    to capture and the `master` files are stitched together into a single   
+    `dmaker` file
   ![](./oversized-example.png)
 
   ### template
