@@ -72,13 +72,13 @@
       * can use three digits when needed
 * **back matter pages:**
   * template: <code>&lt;digi_id&gt;<b>\_bk</b>&lt;sequence number&gt;_&lt;role&gt;<b>.tif</b></code>
-    * <code>sequence number<code>: a **two digit** integer padded with leading zeros
+    * `sequence number`: a **two digit** integer padded with leading zeros
       * can use three digits when needed
 * **inserts:**
   * template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
-    * <code>page number<code>: the **six digit** integer padded with leading zeros that  
+    * `page number`: the **six digit** integer padded with leading zeros that  
     matches the last numbered page before the insert
-    * <code>sequence number<code>: a **two digit** integer padded with leading zeros  
+    * `sequence number`: a **two digit** integer padded with leading zeros  
     that indicates the sequence of the page in the "insert" section
       * can use three digits when needed
 * **oversized pages:**
