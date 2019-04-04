@@ -3,6 +3,7 @@
   * front matter:
     * `nyu_aco123456_fr01_m.tif`
     * `nyu_aco123456_fr01_d.tif`
+    * ...
     * `nyu_aco123456_fr157_m.tif`
     * `nyu_aco123456_fr157_d.tif`
   * numbered pages:
@@ -11,13 +12,15 @@
   * back matter:
     * `nyu_aco123456_bk97_m.tif`
     * `nyu_aco123456_bk97_d.tif`
+    * ...
     * `nyu_aco123456_bk191_m.tif`
     * `nyu_aco123456_bk191_d.tif`
   * inserts:
-    * `nyu_aco123456_000973_01_m.tif`
-    * `nyu_aco123456_000973_01_d.tif`
-    * `nyu_aco123456_000973_02_m.tif`
-    * `nyu_aco123456_000973_02_d.tif`
+    * e.g., two insert pages between numbered pages 973 and 974
+      * `nyu_aco123456_000973_01_m.tif`
+      * `nyu_aco123456_000973_01_d.tif`
+      * `nyu_aco123456_000973_02_m.tif`
+      * `nyu_aco123456_000973_02_d.tif`
   * oversized:
     * e.g., oversized page # 321 requiring 4 `master` files
       * `nyu_aco123456_000321_01_m.tif`
