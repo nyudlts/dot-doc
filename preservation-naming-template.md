@@ -68,7 +68,7 @@
     matches the page number printed on the page
 * **front matter pages:**
   * template: <code>&lt;digi_id&gt;<b>\_fr</b>&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
-    * <code>sequence number<code>: a **two digit** integer padded with leading zeros
+    * `sequence number`: a **two digit** integer padded with leading zeros
       * can use three digits when needed
 * **back matter pages:**
   * template: <code>&lt;digi_id&gt;<b>\_bk</b>&lt;sequence number&gt;_&lt;role&gt;<b>.tif</b></code>
