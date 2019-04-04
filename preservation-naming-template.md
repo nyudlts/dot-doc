@@ -85,12 +85,11 @@
     that indicates the sequence of the page in the "insert" section
       * can use three digits when needed
 * **oversized pages:**
-  * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_d.tif</code>
-    * `page number`: a **six digit** integer padded with leading zeros that  
-    matches the page number in the item
-  * `master` template: `&lt;digi_id&gt;_&lt;page number&gt;_&lt;sequence number&gt;_m.tif`
-    * `sequence number`: a **two digit** integer padded with leading zeros  
-    that indicates that this is part of an oversized page
+  * if the oversized page has a page number on it:
+    * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\<b>_d.tif</b></code>
+      * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
+    * `master` template: <code>&lt;digi_id&gt;_&lt;page number&gt;_&lt;sequence number&gt;<b>\_m.tif</b></code>
+      * `sequence number`: a **two digit** integer padded with leading zeros that indicates that this is part of an oversized page
 * **session target:**
   * `dmaker` template: N/A
   * `master` template: <code>&lt;digi_id&gt;_target_m.tif`
