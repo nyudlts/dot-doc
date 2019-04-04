@@ -52,22 +52,22 @@
   ![](./oversized-example.png)
 
   ### template
-  * generic template: <code>&lt;digi_id&gt;\_&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * generic template: `<digi_id>_<sequence number>_<role>`<code><b>.tif</b></code>
     * `digi_id`: the `digitization id` assigned to the `digital object`
-    * <code>sequence number<code>: an integer padded with leading-zeros as needed,  
-    e.g., <code>000007<code>, that indicates the order of the corresponding page  
+    * `sequence number`: an integer padded with leading-zeros as needed,  
+    e.g., `000007`, that indicates the order of the corresponding page  
     in the item
-    * <code>role<code>: the role of the file, e.g., <code>master</code>, <code>dmaker</code>
-      * use <code>_m<code> for <code>master</code> files
-      * use <code>_d<code> for <code>dmaker</code> files
+    * `role`: the role of the file, e.g., `master`, `dmaker`
+      * use `_m` for `master` files
+      * use `_d` for `dmaker` files
 
 #### specific templates
 * **numbered pages:**
-  * template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * template: `<digi_id>_<page number>_<role>`<code><b>.tif</b></code>
     * <code>page number<code>: a **six digit** integer padded with leading zeros that  
     matches the page number printed on the page
 * **front matter pages:**
-  * template: <code>&lt;digi_id&gt;<b>\_fr</b>&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * template: `<digi_id>`<code><b>\_fr</b></code>`<sequence number>_<role>`<code><b>.tif</b></code>
     * <code>sequence number<code>: a **two digit** integer padded with leading zeros
       * can use three digits when needed
 * **back matter pages:**
