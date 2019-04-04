@@ -34,24 +34,25 @@
       * <code>nyu_aco123456_000722_02_02_m.tif</code>
       * <code>nyu_aco123456_000722_02_d.tif</code>  
   * session target:
-    * <code>nyu_aco123456_target_m.tif</code>
+    * `nyu_aco123456_target_m.tif`
   * EOC file:
-    * <code>20160324-IQ260-EOC.csv<code>
-    * <code>nyu_aco001871_eoc.csv<code>
+    * `20160324-IQ260-EOC.csv`
+    * `nyu_aco001871_eoc.csv`
 
 ### terms:
-* **numbered pages**: images of pages that have numbers printed on them
-* **front matter pages**: images of pages that precede the numbered pages
-* **back matter pages**: images of pages that follow the numbered pages
-* **insert pages**: images of pages that do not have numbers on them and   
-  appear between numbered pages
-![](./insert-example.png)
-* **oversized pages**: images of pages that require multiple <code>master</code> files  
-to capture and the <code>master</code> files are stitched together into a single   
-<code>dmaker</code> file
-![](./oversized-example.png)
-### template
-* generic template:
+  * **numbered pages**: images of pages that have numbers printed on them
+  * **front matter pages**: images of pages that precede the numbered pages
+  * **back matter pages**: images of pages that follow the numbered pages
+  * **insert pages**: images of pages that do not have numbers on them and   
+    appear between numbered pages
+  ![](./insert-example.png)
+  * **oversized pages**: images of pages that require multiple <code>master</code> files  
+    to capture and the <code>master</code> files are stitched together into a single   
+    <code>dmaker</code> file
+  ![](./oversized-example.png)
+
+  ### template
+  * generic template:
   * <code>&lt;digi_id&gt;\_&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
     * <code>digi_id<code>: the <code>digitization id<code> assigned to the <code>digital object<code>
     * <code>sequence number<code>: an integer padded with leading-zeros as needed,  
