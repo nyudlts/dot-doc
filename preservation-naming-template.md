@@ -43,15 +43,13 @@
     * `nyu_aco001871_eoc.csv`
 
 ### terms:
-  * **numbered pages**: images of pages that have numbers printed on them
+  * **numbered pages**: images of pages that have page numbers printed on them
   * **front matter pages**: images of pages that precede the numbered pages
   * **back matter pages**: images of pages that follow the numbered pages
-  * **insert pages**: images of pages that do not have numbers on them and   
-    appear between numbered pages
+  * **insert pages**: images of unnumbered pages that appear between numbered pages
   ![](./insert-example.png)
   * **oversized pages**: images of pages that require multiple `master` files  
-    to capture and the `master` files are stitched together into a single   
-    `dmaker` file
+    to capture. The `master` files are stitched together to create a single `dmaker` file  
   ![](./oversized-example.png)
 
   ### template
