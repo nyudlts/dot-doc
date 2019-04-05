@@ -1,4 +1,4 @@
-## Digital Object Type Variant Documentation
+## Digital Object Naming Requirements
 This repository specifies the file and naming requirements used by
 New York University's Digital Library Technology Services department
 to validate digital objects produced by different digitization workflows.
@@ -39,7 +39,6 @@ the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye
 imaging projects, the `dmaker file` contains a cropped version of the `master file`  
 in which the calibration target has been excluded.
 * `digital object type variant`: the name for the combination of a `DOT` and  
-
 a `digitization workflow`. For example, a book item can be digitized using various  
 `digitization workflows`, e.g., the `preservation` workflow, the `access` workflow,  
 the `bookeye` workflow, all of which result in a different set of files in the `digital object`.
