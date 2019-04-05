@@ -4,12 +4,20 @@
 This repository contains files describing the digital object types supported   
 by New York University's Digital Library Technology Services department.
 
-## Digital Object Types (`DOT`s) and Digitization Workflows
+## Digital Object Types (`DOT`s)
+* `book`: the `DOT` created when digitizing a bound volume
 * `image set` : the `DOT` created when digitizing an unbound `item`,  
-e.g., a folder of documents **[is this definition confusing?]:**
-  * documentation link: COMING SOON!
+   e.g., a folder of documents 
 
-### `book`  
+## Digital Object Types (`DOT`s) and Digitization Workflows
+### `book` Digitization Workflows
+| workflow       | master   | dmaker   | session  | EOC      | naming                                    |
+| name           | files    | files    | target   | file     | template                                  |
+|----------------|----------|----------|----------|----------|-------------------------------------------|
+| `preservation` | REQUIRED | REQUIRED | REQUIRED | REQUIRED | [link](./preservation-naming-template.md) |
+|                |          |          |          |          |                                           |
+
+
   * the `DOT` created when digitizing a bound volume
   * a `book` can be created using one of several digitization workflows:
     * `preservation` workflow:
