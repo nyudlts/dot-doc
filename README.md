@@ -11,12 +11,12 @@ to validate digital objects produced by different digitization workflows.
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
-| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | naming<br>template                        |
-|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:-----------:|-------------------------------------------|
-| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | [link](./preservation-naming-template.md) |
-| book      | `access`         | ---             | REQUIRED        | ---               | ---         | [link](./access-naming-template.md)       |
-| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | [link](./bookeye-naming-template.md)      |
-| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional    | [link](./preservation-naming-template.md) |
+| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | README.txt<br>file | naming<br>template                        |
+|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:-----------:|:------------------:|-------------------------------------------|
+| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | optional           | [link](./preservation-naming-template.md) |
+| book      | `access`         | ---             | REQUIRED        | ---               | ---         | optional           | [link](./access-naming-template.md)       |
+| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | optional           | [link](./bookeye-naming-template.md)      |
+| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
 
 
 ### Terms Used
