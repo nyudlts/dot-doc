@@ -10,13 +10,13 @@ by New York University's Digital Library Technology Services department.
    e.g., a folder of documents 
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
-### `book` Digitization Workflows
 
-| workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | naming<br>template                        |
-|------------------|:---------------:|:---------------:|:-----------------:|:-----------:|:-----------------------------------------:|
-| `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | [link](./preservation-naming-template.md) |
-| `access`         | ---             | REQUIRED        | ---               | ---         | [link](./access-naming-template.md)       |
-| `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | [link](./bookeye-naming-template.md)      |
+| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | naming<br>template                        |
+|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:-----------:|-------------------------------------------|
+| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | [link](./preservation-naming-template.md) |
+| book      | `access`         | ---             | REQUIRED        | ---               | ---         | [link](./access-naming-template.md)       |
+| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | [link](./bookeye-naming-template.md)      |
+| image-set | `preservation`   | REQUIRED        | REQUIRED        | OPTIONAL          | OPTIONAL    | [link](./preservation-naming-template.md) |
 
 
 ### Terms Used
