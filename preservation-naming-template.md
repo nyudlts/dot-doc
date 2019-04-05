@@ -28,6 +28,7 @@
       * `nyu_aco123456_000321_03_m.tif`
       * `nyu_aco123456_000321_04_m.tif`
       * `nyu_aco123456_000321_d.tif`
+  * oversized insert:
     * e.g., oversized, two-sided insert right after page # 722 requiring  
     two `master` files per side
       * `nyu_aco123456_000722_01_01_m.tif`
@@ -81,20 +82,20 @@
     * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence number of the page in the "insert" section
       * can use three digits when needed
 * **oversized pages:**
-  * if the oversized page **has a page number** on it:
+  * an oversized page **has a page number** on it
     * `dmaker` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>_d.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
     * `master` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;master file number&gt;<b>\_m.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
       * `master file number`: a **two digit** integer padded with leading zeros that indicates that this master file is part of an oversized page
-  * if the oversized page **DOES NOT have a page number** on it:
-    * this is the "oversized insert" case
+* **oversized insert pages:**
+  * an oversized insert page **DOES NOT have a page number** on it
     * `dmaker` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_d.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the last numbered page
       * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence of the page in the "insert" section
         * can use three digits when needed
     * `master` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_</b>&lt;master file number&gt;<b>\_m.tif</b></code>
-      * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
+      * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the last numbered page
       * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence of the page in the "insert" section
         * can use three digits when needed
       * `master file number`: a **two digit** integer padded with leading zeros that indicates that this master file is part of an oversized page
