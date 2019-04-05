@@ -115,7 +115,9 @@
 ### requirements:
 * for front matter pages, numbered pages, back matter pages, inserts:
   * every `master` file **MUST** have a corresponding `dmaker` file
-* for oversized numbered pages, and oversized inserts
+* for oversized numbered pages and oversized inserts
+  * the multiple `master` files used to capture a single physical oversized page 
+    **MUST** be stitched together into one `dmaker` file
 
 * all filenames must be numbered sequentially
     * i.e., 
