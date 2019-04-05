@@ -1,7 +1,7 @@
 ## `bookeye` workflow naming template
   * in the `bookeye` workflow:
     * no special naming conventions are used to differentiate the session target, front matter pages, numbered pages, and back matter pages
-    * there is a `session target` that **MUST** be named using this template <code><digi_id><b>_000001.tif</b></code>
+    * each digital object **MUST** have a `session target` that **MUST** be named using this template <code><digi_id><b>_000001.tif</b></code>
 
 ### examples: ([template details](#template) below)  
   * session target and item images
