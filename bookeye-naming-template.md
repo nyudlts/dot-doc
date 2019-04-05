@@ -30,8 +30,8 @@
 * **EOC file:**
   * the following are valid EOC templates:
     * template: <code>&lt;digitization station name&gt;<b>-EOC.csv</b></code>
-    * template: <code>&lt;digitization station name&gt;<code><b>_EOC.csv</b></code>
-    * template: <code>&lt;digitization station name&gt;<code><b>_eoc.csv</b></code>
+    * template: <code>&lt;digitization station name&gt;<b>_EOC.csv</b></code>
+    * template: <code>&lt;digitization station name&gt;<b>_eoc.csv</b></code>
     * template: <code><digi_id><b>_eoc.csv</b></code>
 
 ### requirements:
