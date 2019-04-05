@@ -14,6 +14,7 @@
     * `sequence number`: an integer padded with leading-zeros as needed,  
     e.g., `000007`, that indicates the order of the corresponding page in the item  
 
+### requirement:
 * all filenames must be numbered sequentially
   * i.e., 
     ```
