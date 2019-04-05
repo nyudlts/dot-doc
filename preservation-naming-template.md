@@ -21,14 +21,14 @@
       * `nyu_aco123456_000973_01_d.tif`
       * `nyu_aco123456_000973_02_m.tif`
       * `nyu_aco123456_000973_02_d.tif`
-  * oversized:
+  * oversized numbered pages:
     * e.g., oversized page # 321 requiring 4 `master` files
       * `nyu_aco123456_000321_01_m.tif`
       * `nyu_aco123456_000321_02_m.tif`
       * `nyu_aco123456_000321_03_m.tif`
       * `nyu_aco123456_000321_04_m.tif`
       * `nyu_aco123456_000321_d.tif`
-  * oversized insert:
+  * oversized insert pages:
     * e.g., oversized, two-sided insert right after page # 722 requiring  
     two `master` files per side
       * `nyu_aco123456_000722_01_01_m.tif`
@@ -36,7 +36,7 @@
       * `nyu_aco123456_000722_01_d.tif`
       * `nyu_aco123456_000722_02_01_m.tif`
       * `nyu_aco123456_000722_02_02_m.tif`
-      * `nyu_aco123456_000722_02_d.tif`  
+      * `nyu_aco123456_000722_02_d.tif`
   * session target:
     * `nyu_aco123456_target_m.tif`
   * EOC file:
@@ -48,6 +48,9 @@
   * **front matter pages**: images of pages that precede the numbered pages
   * **back matter pages**: images of pages that follow the numbered pages
   * **insert pages**: images of unnumbered pages that appear between numbered pages
+  * **oversized numbered pages**: images of large pages that have a page number and require multiple master files to fully image
+  * **oversized insert pages**: images of large pages that DO NOT have a page number and require multiple master files to fully image
+  
   ![](./insert-example.png)
   * **oversized pages**: images of pages that require multiple `master` files  
     to capture. The `master` files are stitched together to create a single `dmaker` file  
@@ -108,3 +111,49 @@
     * template: <code>&lt;digitization station name&gt;<b>_EOC.csv</b></code>
     * template: <code>&lt;digitization station name&gt;<b>_eoc.csv</b></code>
     * template: <code>&lt;digi_id&gt;<b>_eoc.csv</b></code>
+
+### requirements:
+* for front matter pages, numbered pages, back matter pages, inserts:
+  * every `master` file **MUST** have a corresponding `dmaker` file
+* for oversized numbered pages, and oversized inserts
+
+* all filenames must be numbered sequentially
+    * i.e., 
+      ```
+      # GOOD
+      nyu_aco001311_fr01_m.tif
+      nyu_aco001311_fr01_d.tif
+      nyu_aco001311_fr02_m.tif
+      nyu_aco001311_fr02_d.tif
+      nyu_aco001311_fr03_m.tif
+      nyu_aco001311_fr03_d.tif
+      nyu_aco001311_000001_m.tif
+      nyu_aco001311_000001_d.tif
+      ...
+      nyu_aco001311_000123_m.tif
+      nyu_aco001311_000123_d.tif
+      nyu_aco001311_000124_m.tif
+      nyu_aco001311_000124_d.tif
+      nyu_aco001311_000124_01_m.tif
+      nyu_aco001311_000124_01_d.tif
+      nyu_aco001311_000124_02_m.tif
+      nyu_aco001311_000124_02_d.tif
+      nyu_aco001311_000125_m.tif
+      nyu_aco001311_000125_d.tif
+      ...
+      nyu_aco001311_bk01_m.tif
+      nyu_aco001311_bk01_d.tif
+      nyu_aco001311_bk02_m.tif
+      nyu_aco001311_bk02_d.tif
+
+
+
+
+    # BAD (missing 000724)
+    ...
+    nyu_aco001311_000723.tif
+    nyu_aco001311_000725.tif
+    nyu_aco001311_000726.tif
+    ...
+    ```
+

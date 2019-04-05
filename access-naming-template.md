@@ -1,6 +1,6 @@
 ## `access` workflow naming template
   * in the `access` workflow, only `dmaker` files are generated.
-    * no special naming conventions are used to denote front matter, numbered pages, or back matter
+    * no special naming conventions are used to differentiate front matter, numbered pages, and back matter
 
 ### examples: ([template details](#template) below)
   * `nyu_aco123456_0000001.tif`
@@ -14,7 +14,7 @@
     * `sequence number`: an integer padded with leading-zeros as needed,  
     e.g., `000007`, that indicates the order of the corresponding page in the item  
 
-### requirement:
+### requirements:
 * all filenames must be numbered sequentially
   * i.e., 
     ```

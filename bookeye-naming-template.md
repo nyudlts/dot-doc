@@ -1,6 +1,6 @@
 ## `bookeye` workflow naming template
   * in the `bookeye` workflow:
-    * no special naming conventions are used to denote session target, front matter, numbered pages, or back matter
+    * no special naming conventions are used to differentiate sessiont target, front matter, numbered pages, and back matter
     * there is a `session target` that **MUST** be named using this template <code><digi_id><b>_000001.tif</b></code>
 
 ### examples: ([template details](#template) below)
@@ -32,10 +32,10 @@ w#### specific templates
     * template: <code>&lt;digitization station name&gt;<code><b>_eoc.csv</b></code>
     * template: <code><digi_id><b>_eoc.csv</b></code>
 
-### requirement:
+### requirements:
 * all digital objects created with the `bookeye` workflow **MUST** include an EOC file.
-  (Without an EOC file, there is no way to differentiate between and `access`-workflow   
-   digital object and a `bookeye`-workflow digital object.)
+  (Without an EOC file, there is no way to differentiate between `access`-workflow   
+   digital objects and a `bookeye`-workflow digital objects.)
 
 * all filenames must be numbered sequentially
   * i.e., 
