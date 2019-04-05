@@ -18,7 +18,7 @@
 
 ### template
   * generic template:
-    * <code><digi_id><b>_</b><sequence number><b>.tif</b></code>
+    * <code><digi_id><b>\_</b><sequence number><b>.tif</b></code>
       * `digi_id`: the `digitization id` assigned to the `digital object`
       * `sequence number`: an integer padded with leading-zeros as needed,  
          e.g., `000007`, that indicates the order of the corresponding page in the item
