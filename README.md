@@ -1,8 +1,8 @@
-## DOCUMENT STATUS: WORK-IN-PROGRESS
+## Digital Object Type Variant Documentation
+This repository specifies the file and naming requirements used by
+New York University's Digital Library Technology Services department
+to validate digital objects produced by different digitization workflows.
 
-## Digital Object Type Documentation
-This repository contains files describing the digital object types supported   
-by New York University's Digital Library Technology Services department.
 
 ## Digital Object Types (`DOT`s)
 * `book`: the `DOT` created when digitizing a bound volume
@@ -29,8 +29,8 @@ e.g., `book`,`image set`
 * `digitization station`: the set of equipment used to digitize an `item`
 * `environment of creation file (eoc)`: a file that contains information about  
 the `digitization station`
-* `digitization process/method/technique/workflow(?)`**[need a term here!]:**  
-the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye-4`
+* `digitization workflow:**  
+the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye`
 * `master file`: a file used for long-term storage/preservation of the `digital object`.  
   In imaging projects, the `master file` includes a calibration target alongside  
   the content being imaged.  
@@ -39,10 +39,10 @@ the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye
 imaging projects, the `dmaker file` contains a cropped version of the `master file`  
 in which the calibration target has been excluded.
 * `digital object type variant`: the name for the combination of a `DOT` and  
-a `digitization process/method/technique/workflow`.  For example, a book item  
-can be digitized using various `digitization workflows`, e.g., the `preservation`  
-workflow, the `access` workflow, the `bookeye-4` workflow, all of which result  
-in a different set of files in the `digital object`.
+
+a `digitization workflow`. For example, a book item can be digitized using various  
+`digitization workflows`, e.g., the `preservation` workflow, the `access` workflow,  
+the `bookeye` workflow, all of which result in a different set of files in the `digital object`.
 
 ### Template Notation
 * naming templates are used throughout this documentation
@@ -52,7 +52,34 @@ in a different set of files in the `digital object`.
 * a vertical bar `|` indicates alternate values
 * any characters outside of brackets must be present as written
 
-### Directory Naming
+### Characters Allowed in Directory and File Names:
+* The **ONLY** characters allowed in directory and file names are:
+  * `A-Za-z0-9_` 
+    i.e., 
+    capital letters `A` through `Z`
+    lowercase letters `a` through `z`
+    digits `0` through `9`
+    underscore `_`
+* The dot/period '.' character is **ONLY** allowed as a delimiter between  
+  a filename stem and the filename extension.
+  ```
+  e.g., nyu_aco123456_fr01_d.tif
+        where nyu_aco123456_fr01_d is the filename "stem"
+        and   tif                  is the filename "extension"
+  ```
+  
+* examples:
+  ```
+  # GOOD
+  /Volumes/Drive_001/this/is/a/valid/path/nyu_aco123456/nyu_aco123456_fr01_d.tif
+  ```
+  
+  ```
+  # BAD
+  /Volumes/My $uper C00l Drive!/(version 1)/nyu_aco123456/nyu_aco123456_fr01_d.tif  
+  ```
+
+### Directory Naming Requirements
 * **new digital objects**
   * the first time a `digital object` is created, all files for the   
   `digital object` MUST be stored in a directory named `<digi_id>`,  
@@ -69,4 +96,6 @@ in a different set of files in the `digital object`.
   * if there are files that should be added to the original `digital object`,   
   e.g., searchable PDF files, `.srt` files, the files MUST be stored in a  
   directory named `<digi_id>_add`, e.g., `nyu_aco123456_add/`
+
+
 ---
