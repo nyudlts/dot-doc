@@ -23,7 +23,7 @@
       * `sequence number`: an integer padded with leading-zeros as needed,  
          e.g., `000007`, that indicates the order of the corresponding page in the item
 
-w#### specific templates
+#### specific templates
 * **session target:**
   * <code><digi_id><b>_000001.tif</b></code>
 
