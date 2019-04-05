@@ -53,7 +53,7 @@
   ![](./oversized-example.png)
 
   ### template
-  * generic template: <code>&lt;digi_id&gt;<b>_casd</b>&lt;sequence number&gt;<b>\_</b>&lt;role&gt;<b>.tif</b></code>
+  * generic template: <code>&lt;digi_id&gt;<b>_casd</b>&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
     * `digi_id`: the `digitization id` assigned to the `digital object`
     * `sequence number`: an integer padded with leading-zeros, e.g., `000007`,  
     that indicates the order of the corresponding page in the item
