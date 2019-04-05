@@ -3,8 +3,8 @@
     * no special naming conventions are used to differentiate the session target, front matter pages, numbered pages, and back matter pages
     * there is a `session target` that **MUST** be named using this template <code><digi_id><b>_000001.tif</b></code>
 
-### examples: ([template details](#template) below)
-  * `nyu_aco123456_0000001.tif  # this is the session target!`  
+### examples: ([template details](#template) below)  
+  * `nyu_aco123456_0000001.tif  # this is the session target!`
   * `nyu_aco123456_0000002.tif  # this is the first image  of the item`
   * `nyu_aco123456_0000003.tif  # this is the second image of the item`
   * `...`
