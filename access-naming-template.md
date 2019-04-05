@@ -12,8 +12,7 @@
   * `<digi_id>_<sequence number>.tif`
     * `digi_id`: the `digitization id` assigned to the `digital object`
     * `sequence number`: an integer padded with leading-zeros as needed,  
-    e.g., `000007`, that indicates the order of the corresponding page  
-    in the item
+    e.g., `000007`, that indicates the order of the corresponding page in the item  
 
 * all filenames must be numbered sequentially
   * i.e., 
