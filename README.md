@@ -6,8 +6,7 @@ to validate digital objects produced by different digitization workflows.
 
 ## Digital Object Types (`DOT`s)
 * `book`: the `DOT` created when digitizing a bound volume
-* `image set` : the `DOT` created when digitizing an unbound `item`,  
-   e.g., a folder of documents 
+* `image set` : the `DOT` created when digitizing an unbound `item`, e.g., a folder of documents 
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
