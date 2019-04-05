@@ -13,9 +13,9 @@ by New York University's Digital Library Technology Services department.
 ### `book` Digitization Workflows
 
 | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | naming<br>template                        |
-|------------------|-----------------|-----------------|-------------------|-------------|-------------------------------------------|
+|------------------|:---------------:|-----------------|-------------------|-------------|-------------------------------------------|
 | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | [link](./preservation-naming-template.md) |
-| `access`         | NO              | REQUIRED        | NO                | NO          | [link](./access-naming-template.md) |
+| `access`         | ---             | REQUIRED        | NO                | NO          | [link](./access-naming-template.md)       |
 |                  |                 |                 |                   |             |                                           |
 
 
