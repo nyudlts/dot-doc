@@ -52,8 +52,8 @@ the `bookeye` workflow, all of which result in a different set of files in the `
 * a vertical bar `|` indicates alternate values
 * any characters outside of brackets must be present as written
 
-### Characters Allowed in Directory and File Names:
-* The **ONLY** characters allowed in directory and file names are:  
+### Characters Allowed in Directory Names and File Names:
+* The **ONLY** characters allowed in directory names and file names are:  
   * `A-Za-z0-9_`   
     i.e.,   
     capital letters `A` through `Z`  
