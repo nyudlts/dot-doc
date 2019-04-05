@@ -15,21 +15,21 @@
     e.g., `000007`, that indicates the order of the corresponding page  
     in the item
 
-* all filenames must be numbered sequentially, with no breaks sequence numbers
+* all filenames must be numbered sequentially
   * i.e., 
     ```
-    # OK
+    # GOOD
     ...
-    nyu_aco000123.tif
-    nyu_aco000124.tif
-    nyu_aco000125.tif
+    nyu_aco001143_000123.tif
+    nyu_aco001143_000124.tif
+    nyu_aco001143_000125.tif
     ...
 
     # BAD (missing 000724)
     ...
-    nyu_aco000723.tif
-    nyu_aco000725.tif
-    nyu_aco000726.tif
+    nyu_aco001143_000723.tif
+    nyu_aco001143_000725.tif
+    nyu_aco001143_000726.tif
     ...
     ```
 
