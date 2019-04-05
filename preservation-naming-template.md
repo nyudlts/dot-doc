@@ -90,7 +90,7 @@
   * if the oversized page **DOES NOT have a page number** on it:
     * this is the "oversized insert" case
     * `dmaker` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_d.tif</b></code>
-      * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
+      * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the last numbered page
       * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence of the page in the "insert" section
         * can use three digits when needed
     * `master` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_</b>&lt;master file number&gt;<b>\_m.tif</b></code>
