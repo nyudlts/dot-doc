@@ -63,11 +63,11 @@
 
 #### specific templates
 * **numbered pages:**
-  * template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;role&gt;<b>.tif</b></code>
     * `page number`: a **six digit** integer padded with leading zeros that  
     matches the page number printed on the page
 * **front matter pages:**
-  * template: <code>&lt;digi_id&gt;<b>\_fr</b>&lt;sequence number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * template: <code>&lt;digi_id&gt;<b>\_fr</b>&lt;sequence number&gt;<b>\_</b>&lt;role&gt;<b>.tif</b></code>
     * `sequence number`: a **two digit** integer padded with leading zeros
       * can use three digits when needed
 * **back matter pages:**
@@ -75,25 +75,25 @@
     * `sequence number`: a **two digit** integer padded with leading zeros
       * can use three digits when needed
 * **inserts:**
-  * template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;insert number&gt;\_&lt;role&gt;<b>.tif</b></code>
+  * template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_</b>&lt;role&gt;<b>.tif</b></code>
     * `page number`: the **six digit** integer padded with leading zeros that  
     matches the last numbered page before the insert
     * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence number of the page in the "insert" section
       * can use three digits when needed
 * **oversized pages:**
   * if the oversized page **has a page number** on it:
-    * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\<b>_d.tif</b></code>
+    * `dmaker` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>_d.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
-    * `master` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;master file number&gt;<b>\_m.tif</b></code>
+    * `master` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;master file number&gt;<b>\_m.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
       * `master file number`: a **two digit** integer padded with leading zeros that indicates that this master file is part of an oversized page
   * if the oversized page **DOES NOT have a page number** on it:
     * this is the "oversized insert" case
-    * `dmaker` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;insert number&gt;\_<b>\_d.tif</b></code>
+    * `dmaker` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_d.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
       * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence of the page in the "insert" section
         * can use three digits when needed
-    * `master` template: <code>&lt;digi_id&gt;\_&lt;page number&gt;\_&lt;insert number&gt;\_&lt;master file number&gt;\_<b>\_m.tif</b></code>
+    * `master` template: <code>&lt;digi_id&gt;<b>\_</b>&lt;page number&gt;<b>\_</b>&lt;insert number&gt;<b>\_</b>&lt;master file number&gt;<b>\_m.tif</b></code>
       * `page number`: a **six digit** integer padded with leading zeros that matches the page number on the oversized page
       * `insert number`: a **two digit** integer padded with leading zeros that indicates the sequence of the page in the "insert" section
         * can use three digits when needed
