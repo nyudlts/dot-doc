@@ -120,7 +120,7 @@
     **MUST** be stitched together into one `dmaker` file
 
 * all filenames must be numbered sequentially
-    * i.e., 
+    * e.g., 
       ```
       # GOOD
       nyu_aco001311_fr01_m.tif
