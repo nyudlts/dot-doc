@@ -53,13 +53,13 @@ the `bookeye` workflow, all of which result in a different set of files in the `
 * any characters outside of brackets must be present as written
 
 ### Characters Allowed in Directory and File Names:
-* The **ONLY** characters allowed in directory and file names are:
-  * `A-Za-z0-9_` 
-    i.e., 
-    capital letters `A` through `Z`
-    lowercase letters `a` through `z`
-    digits `0` through `9`
-    underscore `_`
+* The **ONLY** characters allowed in directory and file names are:  
+  * `A-Za-z0-9_`   
+    i.e.,   
+    capital letters `A` through `Z`  
+    lowercase letters `a` through `z`  
+    digits `0` through `9`  
+    underscore `_`  
 * The dot/period '.' character is **ONLY** allowed as a delimiter between  
   a filename stem and the filename extension.
   ```
@@ -82,19 +82,19 @@ the `bookeye` workflow, all of which result in a different set of files in the `
 ### Directory Naming Requirements
 * **new digital objects**
   * the first time a `digital object` is created, all files for the   
-  `digital object` MUST be stored in a directory named `<digi_id>`,  
+  `digital object` **MUST** be stored in a directory named `<digi_id>`,  
   e.g., `nyu_aco123456/`
 * **patches**
   * if some files in the original `digital object` need to be replaced,  
-  the replacement files MUST be stored in a directory named `<digi_id>_patch`,  
+  the replacement files **MUST** be stored in a directory named `<digi_id>_patch`,  
   e.g., `nyu_aco123456_patch/`
 * **redos**
   * if the original `digital object` needs to be replaced completely, the files  
-  for the `replacement digital object` MUST be stored in a directory named  
+  for the `replacement digital object` **MUST** be stored in a directory named  
   `<digi_id>_redo`, e.g., `nyu_aco123456_redo/`
 * **additions**
   * if there are files that should be added to the original `digital object`,   
-  e.g., searchable PDF files, `.srt` files, the files MUST be stored in a  
+  e.g., searchable PDF files, `.srt` files, the files **MUST** be stored in a  
   directory named `<digi_id>_add`, e.g., `nyu_aco123456_add/`
 
 
