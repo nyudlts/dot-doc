@@ -145,15 +145,27 @@
       nyu_aco001311_bk01_d.tif
       nyu_aco001311_bk02_m.tif
       nyu_aco001311_bk02_d.tif
+            
 
+      # BAD 
+      nyu_aco001311_fr01_m.tif
+      nyu_aco001311_fr01_d.tif
+      nyu_aco001311_fr02_m.tif     # missing dmaker file
+      nyu_aco001311_fr03_m.tif
+      nyu_aco001311_fr03_d.tif
+      nyu_aco001311_000001_m.tif
+      nyu_aco001311_000001_d.tif
+      ...
+      nyu_aco001311_000123_m.tif
+      nyu_aco001311_000123_d.tif
+      nyu_aco001311_000124_d.tif   # missing master file
+      nyu_aco001311_000124_01_m.tif
+      nyu_aco001311_000124_01_d.tif
+      nyu_aco001311_000124_02_m.tif
+      nyu_aco001311_000124_02_d.tif
+      nyu_aco001311_000126_m.tif   # missing image files for 000125
+      nyu_aco001311_000126_d.tif
+      ...
+      ```
 
-
-
-    # BAD (missing 000724)
-    ...
-    nyu_aco001311_000723.tif
-    nyu_aco001311_000725.tif
-    nyu_aco001311_000726.tif
-    ...
-    ```
-
+---
