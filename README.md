@@ -14,7 +14,7 @@ by New York University's Digital Library Technology Services department.
 
 | workflow       | master   | dmaker   | session  | EOC      | naming                                    |  
 
-| name           | files    | files    | target   | file     | template                                  |  
+| workflow<br>name           | files    | files    | target   | file     | template                                  |  
 |----------------|----------|----------|----------|----------|-------------------------------------------|  
 | `preservation` | REQUIRED | REQUIRED | REQUIRED | REQUIRED | [link](./preservation-naming-template.md) |  
 |                |          |          |          |          |                                           |  
