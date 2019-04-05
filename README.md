@@ -16,7 +16,7 @@ by New York University's Digital Library Technology Services department.
 | book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | [link](./preservation-naming-template.md) |
 | book      | `access`         | ---             | REQUIRED        | ---               | ---         | [link](./access-naming-template.md)       |
 | book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | [link](./bookeye-naming-template.md)      |
-| image-set | `preservation`   | REQUIRED        | REQUIRED        | OPTIONAL          | OPTIONAL    | [link](./preservation-naming-template.md) |
+| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional    | [link](./preservation-naming-template.md) |
 
 
 ### Terms Used
