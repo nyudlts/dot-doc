@@ -5,10 +5,10 @@
 
 ### examples: ([template details](#template) below)  
 ```
-  `nyu_aco123456_0000001.tif  # this is the session target!`
-  `nyu_aco123456_0000002.tif  # this is the first image  of the item`
-  `nyu_aco123456_0000003.tif  # this is the second image of the item`
-  `...`
+  nyu_aco123456_0000001.tif  # this is the session target!
+  nyu_aco123456_0000002.tif  # this is the first image  of the item
+  nyu_aco123456_0000003.tif  # this is the second image of the item
+  ...
 ```
   * EOC file:
     * `20160324-IQ260-EOC.csv`
