@@ -35,7 +35,7 @@
     * template: <code><digi_id><b>_eoc.csv</b></code>
 
 ### requirements:
-* all digital objects created with the `bookeye` workflow **MUST** include an EOC file.
+* all digital objects created with the `bookeye` workflow **MUST** include an EOC file.  
   (Without an EOC file, there is no way to differentiate between `access`-workflow   
    digital objects and a `bookeye`-workflow digital objects.)
 
