@@ -11,11 +11,12 @@ by New York University's Digital Library Technology Services department.
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 ### `book` Digitization Workflows
-| workflow       | master   | dmaker   | session  | EOC      | naming                                    |
-| name           | files    | files    | target   | file     | template                                  |
-|----------------|----------|----------|----------|----------|-------------------------------------------|
-| `preservation` | REQUIRED | REQUIRED | REQUIRED | REQUIRED | [link](./preservation-naming-template.md) |
-|                |          |          |          |          |                                           |
+
+| workflow       | master   | dmaker   | session  | EOC      | naming                                    |  
+| name           | files    | files    | target   | file     | template                                  |  
+|----------------|----------|----------|----------|----------|-------------------------------------------|  
+| `preservation` | REQUIRED | REQUIRED | REQUIRED | REQUIRED | [link](./preservation-naming-template.md) |  
+|                |          |          |          |          |                                           |  
 
 
   * the `DOT` created when digitizing a bound volume
