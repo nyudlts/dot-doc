@@ -41,7 +41,6 @@
     * `nyu_aco123456_target_m.tif`
   * EOC file:
     * `20160324-IQ260-EOC.csv`
-    * `nyu_aco001871_eoc.csv`
 
 ### terms:
   * **numbered pages**: images of pages that have page numbers printed on them

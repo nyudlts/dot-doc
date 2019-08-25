@@ -25,10 +25,10 @@
     nyu_aco001143_000125.tif
     ...
 
-    # BAD (missing 000724)
+    # BAD 
     ...
     nyu_aco001143_000723.tif
-    nyu_aco001143_000725.tif
+    nyu_aco001143_000725.tif  # missing file for 000724
     nyu_aco001143_000726.tif
     ...
     ```

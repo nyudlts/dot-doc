@@ -1,8 +1,11 @@
 ## Digital Object Naming Requirements
-This repository specifies the file and naming requirements used by
-New York University's Digital Library Technology Services department
-to validate digital objects produced by different digitization workflows.
+This repository specifies the file and naming conventions used by  
+New York University's Digital Library Technology Services department.  
+All digital object files must conform to these file naming specifications.
 
+
+## QUICKSTART: 
+If you just want to see the naming conventions in practice, please see [these examples](./QUICKSTART.md)  
 
 ## Digital Object Types (`DOT`s)
 * `book`: the `DOT` created when digitizing a bound volume
@@ -16,6 +19,7 @@ to validate digital objects produced by different digitization workflows.
 | book      | `access`         | ---             | REQUIRED        | ---               | ---         | optional           | [link](./access-naming-template.md)       |
 | book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | optional           | [link](./bookeye-naming-template.md)      |
 | image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
+| image set | `access`         | ---             | REQUIRED        | ---               | ---         | optional           | [link](./access-naming-template.md)       |
 
 
 ### Terms Used
@@ -28,16 +32,14 @@ e.g., `book`,`image set`
 * `digitization station`: the set of equipment used to digitize an `item`
 * `environment of creation file (eoc)`: a file that contains information about  
 the `digitization station`
-* `digitization workflow:**  
-the workflow used to digitize the item, e.g., `preservation`, `access`, `bookeye`
+* `digitization workflow`: the workflow used to digitize the item,  
+e.g., `preservation`, `access`, `bookeye`
 * `master file`: a file used for long-term storage/preservation of the `digital object`.  
   In imaging projects, the `master file` includes a calibration target alongside  
   the content being imaged.  
 * `session-target file`: a file containing the image of a calibration target
-* `derivative-maker file (dmaker)`: a file used to generate access files. In  
-imaging projects, the `dmaker file` contains a cropped version of the `master file`  
-in which the calibration target has been excluded.
-* `digital object type variant`: the name for the combination of a `DOT` and  
+* `derivative-maker file (dmaker)`: a file used to generate access files.   
+* `digital object type variant (DOT-variant)`: the name for the combination of a `DOT` and  
 a `digitization workflow`. For example, a book item can be digitized using various  
 `digitization workflows`, e.g., the `preservation` workflow, the `access` workflow,  
 the `bookeye` workflow, all of which result in a different set of files in the `digital object`.
