@@ -4,7 +4,7 @@ For more details, please see the [README.md](./README.md) document.
 
 
 ## Examples
-Convention: each example heading indicates the *<digital object type>/<digital object workflow>*.  
+Each example heading indicates the **`<digital object type>/<digital object workflow>`**.  
 
 ### book / preservation
 ```
