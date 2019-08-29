@@ -45,9 +45,9 @@
 
 
 #### Please note:   
-When using the `preservation` workflow for `image sets`\,   
-e.g., digitizing a folder of unbound documents, the "numbered pages" template  
-hould be used, as a folder of unbound documents does not have front matter or back matter.
+When using the `preservation` workflow for digitizing `image sets`\, e.g., folders of unbound documents,  
+the ["numbered pages" specific template](#specific-templates) should be used because a folder of unbound documents does not  
+have front matter or back matter.
 
 
 ### [Link to "Terms Used"](./README.md#terms-used)
