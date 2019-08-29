@@ -7,7 +7,7 @@ All digital object files must conform to these file naming specifications.
 ## QUICKSTART:
 If you just want to see the naming conventions in practice, please see [these examples](./QUICKSTART.md)  
 If you want to learn about the relationship between ArchivesSpace work orders and  
-digitization identifiers please see [this document](./aspace_workorders_and_digitization.md).  
+digitization identifiers please see [this document](./aspace-workorders-and-digitization.md).  
 
 ## Digital Object Types (`DOT`s)
 * `book`: the `DOT` created when digitizing a bound volume
