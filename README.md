@@ -4,12 +4,14 @@ New York University's Digital Library Technology Services department.
 All digital object files must conform to these file naming specifications.
 
 
-## QUICKSTART: 
+## QUICKSTART:
 If you just want to see the naming conventions in practice, please see [these examples](./QUICKSTART.md)  
+If you want to learn about the relationship between ArchivesSpace work orders and  
+digitization identifiers please see [this document](./aspace_workorders_and_digitization.md).  
 
 ## Digital Object Types (`DOT`s)
 * `book`: the `DOT` created when digitizing a bound volume
-* `image set` : the `DOT` created when digitizing an unbound `item`, e.g., a folder of documents 
+* `image set` : the `DOT` created when digitizing an unbound `item`, e.g., a folder of documents
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
@@ -67,13 +69,13 @@ the `bookeye` workflow, all of which result in a different set of files in the `
         where nyu_aco123456_fr01_d is the filename "stem"
         and   tif                  is the filename "extension"
   ```
-  
+
 * examples:
   ```
   # GOOD
   /Volumes/Drive_001/this/is/a/valid/path/nyu_aco123456/nyu_aco123456_fr01_d.tif
   ```
-  
+
   ```
   # BAD
   /Volumes/My $uper C00l Drive!/(version 1)/nyu_aco123456/nyu_aco123456_fr01_d.tif  
