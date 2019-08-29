@@ -16,6 +16,7 @@
     * `nyu_aco123456_eoc.csv`
 
 
+### [Link to "Terms Used"](./README.md#terms-used)
 ### template
 * generic template:
   * `<digi_id>_<sequence number>.tif`
@@ -49,10 +50,10 @@
     nyu_aco001143_000125.tif
     ...
 
-    # BAD (missing 000724)
+    # BAD 
     ...
     nyu_aco001143_000723.tif
-    nyu_aco001143_000725.tif
+    nyu_aco001143_000725.tif  # missing file for 000724
     nyu_aco001143_000726.tif
     ...
     ```

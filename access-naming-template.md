@@ -7,6 +7,7 @@
   * `nyu_aco123456_0000002.tif`
   * `nyu_aco123456_0000003.tif`
 
+### [Link to "Terms Used"](./README.md#terms-used)
 ### template
 * generic template:
   * `<digi_id>_<sequence number>.tif`

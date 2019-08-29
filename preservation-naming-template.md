@@ -1,4 +1,5 @@
 ## `preservation` workflow naming template
+
 ### examples: ([template details](#template) below)
   * front matter:
     * `nyu_aco123456_fr01_m.tif`
@@ -42,7 +43,15 @@
   * EOC file:
     * `20160324-IQ260-EOC.csv`
 
-### terms:
+
+#### Please note:   
+When using the `preservation` workflow for `image sets`\,   
+e.g., digitizing a folder of unbound documents, the "numbered pages" template  
+hould be used, as a folder of unbound documents does not have front matter or back matter.
+
+
+### [Link to "Terms Used"](./README.md#terms-used)
+### Additional `preservation` workflow terms:
   * **numbered pages**: images of pages that have page numbers printed on them
   * **front matter pages**: images of pages that precede the numbered pages
   * **back matter pages**: images of pages that follow the numbered pages
