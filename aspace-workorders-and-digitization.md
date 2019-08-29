@@ -4,7 +4,7 @@ ArchivesSpace work orders contain information required to properly
 name digital object directories and files, and to associate the   
 digital objects with their corresponding ArchivesSpace `archival objects`.  
 
-**It is critical**. therefore, that the digitization identifier (`digi_id`) is properly    
+**It is critical**, therefore, that the digitization identifier (`digi_id`) is properly    
 formed using information in the corresponding work order row, and that the  
 **digital object directory name** matches the `digi_id`.
 
