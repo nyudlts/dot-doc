@@ -112,3 +112,4 @@ Because the digital object directory name **must** match the `digi_id`, we have:
 
 ---
 
+*end of examples*
