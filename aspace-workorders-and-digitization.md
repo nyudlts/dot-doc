@@ -8,7 +8,7 @@ DLTS uses the `digi_id` to look up the ArchivesSpace archival object URI
 which is required to load persistent URLs for the digital objects into  
 ArchivesSpace.
 
-**It is critical**, therefore, that `digi_id` is generated from the  
+**It is critical**, therefore, that the `digi_id` is generated from the  
 information in the ArchivesSpace work order, and that the   
 **digital object directory name** matches the `digi_id`.
 
@@ -19,8 +19,9 @@ is formed by combining a string of characters (the `prefix`), with either
 the work order `Ref ID` or `Component ID` values.  
 
 The `prefix` can be any string of characters that conforms to the rules  
-outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is usually either a normalized version of the `Resource ID`\,  
-or a combination of partner and collection codes from the DLTS repository.  
+outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is usually either a normalized version of the  
+ArchivesSpace work order `Resource ID` value, or a combination of   
+partner and collection codes from the DLTS repository.  
 
 **The `digi_id` must end with either the `Ref ID` or the `Component ID`  
 value from the ArchivesSpace work order.**
@@ -45,7 +46,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 |-------------|----------------------------------|--------------|
 | XY.MC.099   | 731a6d52fd287ce04c86a4d82fd6b098 | ref10_000001 |
 
-`prefix` = `XY_MC_099` (`Resource ID` normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
+`prefix` = `XY_MC_099` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Component ID` = `ref10_000001`  
 
 `digi_id`: **`XY_MC_099_ref10_000001`**
@@ -67,7 +68,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 |-------------|--------|--------------|
 | BAR.937     | ref442 | 937.0123     |
 
-`prefix` = `BAR_937` (`Resource ID` normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
+`prefix` = `BAR_937` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Ref ID` = `ref442`   
 
 `digi_id`: **`BAR_937_ref442`**
@@ -95,9 +96,9 @@ partner code: `foo`
 collection code: `quux876`  
 
 `prefix` = `foo_quux876`  
-`Component ID` value: `cuid2594`  
+`Component ID` = `cuid2594`  
 
-`digi_id`: **`foo_quux876_cuid2594`**
+`digi_id` = **`foo_quux876_cuid2594`**
 
 *required directory structure:*
 ```
@@ -118,8 +119,10 @@ collection code: `quux876`
 | MSS.LaScala.001 | ref3412 | cuid50       |
 
 
-The agreed-upon string: `vxt_MSSLaScala001`  
-`Component ID` value  : `cuid50`  
+agreed-upon string: `vxt_MSSLaScala001`  
+
+`prefix` = `vxt_MSSLaScala001`  
+`Component ID` = `cuid50`  
 
 `digi_id` = **`vxt_MSSLaScala001_cuid50`**
 
