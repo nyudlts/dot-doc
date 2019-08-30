@@ -1,47 +1,56 @@
 ## ArchivesSpace Work Orders and Digitization
 
 ArchivesSpace work orders contain information required to properly  
-name digital object directories and files, and to associate the   
-digital objects with their corresponding ArchivesSpace `archival objects`.  
+name digital object directories and files.  This name is the digitization  
+identifier, or `digi_id`.  
 
-**It is critical**, therefore, that the digitization identifier (`digi_id`) is properly    
-formed using information in the corresponding work order row, and that the  
+DLTS uses the `digi_id` to look up the ArchivesSpace archival object URI  
+which is required to load persistent URLs for the digital objects into  
+ArchivesSpace.
+
+**It is critical**, therefore, that `digi_id` is generated from the  
+information in the ArchivesSpace work order, and that the   
 **digital object directory name** matches the `digi_id`.
 
-The `digi_id` **must** end with either the `Ref ID` value or the  
-`Component ID` value found in the ArchivesSpace work order row for the  
-object being digitized.  This requirement allows DLTS to look up the  
-ArchivesSpace Archival Object `URI` using the `digi_id`. 
+
+#### generating the `digi_id`
+For digitization projects with ArchivesSpace work orders, the `digi_id`  
+is formed by combining a string of characters (the `prefix`), with either  
+the work order `Ref ID` or `Component ID` values.  
+
+The `prefix` can be any string of characters that conforms to the rules  
+outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is usually either a normalized version of the `Resource ID`\,  
+or a combination of partner and collection codes from the DLTS repository.  
+
+**The `digi_id` must end with either the `Ref ID` or the `Component ID`  
+value from the ArchivesSpace work order.**
+
+This means that the `digi_id` must conform to one of the following templates:  
+* `<prefix>_<Ref ID>`  
+* `<prefix>_<Component ID>`  
+
 
 **The project manager and digitization team should agree upon the  
 `digi_id` structure before digitization begins.**
 
+#### Examples:  
+The following examples show `digi_id`s generated using various `prefixes`.  
+
 ---
 
-**Example 1:**  
-Let's say that we're given the following ArchivesSpace work order:
+**Example 1:  `digi_id` = `<Normalized Resource ID>_<Component ID>`**  
 
-| Resource ID | Ref ID                           | URI                                     | Container Indicator 1 | Container Indicator 2 | Container Indicator 3 | Title         | Component ID | Series         |
-|-------------|----------------------------------|-----------------------------------------|-----------------------|-----------------------|-----------------------|---------------|--------------|----------------|
-| XY.MC.099   | 731a6d52fd287ce04c86a4d82fd6b098 | /repositories/73/archival\_objects/4752 | 4                     | 32                    |                       | A Great Title | ref10_000001 | Awesome Things |
-
-
-To simplify things, let's only show the columns that are used to create `digi_id`s.  
 
 | Resource ID | Ref ID                           | Component ID |
 |-------------|----------------------------------|--------------|
 | XY.MC.099   | 731a6d52fd287ce04c86a4d82fd6b098 | ref10_000001 |
 
+`prefix` = `XY_MC_099` (`Resource ID` normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
+`Component ID` = `ref10_000001`  
 
-In this example, the project manager and digitization team agreed to  
-use the `Resource ID` and the `Component ID` to form the `digi_id`\.  
+`digi_id`: **`XY_MC_099_ref10_000001`**
 
-Following the rules outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names):  \
-the `Resource ID` value `XY.MC.099` becomes `XY_MC_099` and  
-the `Component ID` value `ref10_000001` can be used as is,   
-resulting in the `digi_id`: **`XY_MC_099_ref10_000001`**
-
-Because the digital object directory name **must** match the `digi_id`, we have:  
+*required directory structure:*
 ```
    XY_MC_099_ref10_000001/
                           XY_MC_099_ref10_000001_000001_m.tif
@@ -52,25 +61,18 @@ Because the digital object directory name **must** match the `digi_id`, we have:
 ```
 ---
 
-**Example 2.**  
-Given the following ArchivesSpace work order,   
-(only showing the columns used to create `digi_id`s):  
+**Example 2:  `digi_id` = `<Resource ID>_<Ref ID>`**  
 
 | Resource ID | Ref ID | Component ID |
 |-------------|--------|--------------|
 | BAR.937     | ref442 | 937.0123     |
 
+`prefix` = `BAR_937` (`Resource ID` normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
+`Ref ID` = `ref442`   
 
-In this example, the project manager and digitization team agreed to  
-use the `Resource ID` and the `Ref ID` to form the `digi_id`\.  
+`digi_id`: **`BAR_937_ref442`**
 
-Following the rules outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names):  \
-the `Resource ID` value `BAR.937` becomes `BAR_937` and  
-the `Ref ID` value `ref442` can be used as is,  
-resulting in the `digi_id`: **`BAR_937_ref442`**
-
-
-Because the digital object directory name **must** match the `digi_id`, we have:  
+*required directory structure:*
 ```
    BAR_937_ref442/
                   BAR_937_ref442_000001_m.tif
@@ -82,25 +84,22 @@ Because the digital object directory name **must** match the `digi_id`, we have:
 
 ---
 
-**Example 3.**  
-Given the following ArchivesSpace work order,   
-(only showing the columns used to create `digi_id`s):  
+**Example 3:  `digi_id` = `<partner code>_<collection code>_<Component ID>`**  
 
 | Resource ID | Ref ID                           | Component ID |
 |-------------|----------------------------------|--------------|
 | QUUX.876    | ecc59b4631de477fb7f734fd80e208d1 | cuid2594     |
 
 
-In this example, the project manager and digitization team decided to generate the  
-`digi_id` using a "partner code", a "collection code", and the `Component ID` from the  
-work order.  
+partner code: `foo`  
+collection code: `quux876`  
 
-The partner code is `foo`  
-the collection code is `quux876`  
-and the `Component ID` value is `cuid2594`\,  
-resulting in the `digi_id`: **`foo_quux876_cuid2594`**
+`prefix` = `foo_quux876`  
+`Component ID` value: `cuid2594`  
 
-Because the digital object directory name **must** match the `digi_id`, we have:  
+`digi_id`: **`foo_quux876_cuid2594`**
+
+*required directory structure:*
 ```
    foo_quux876_cuid2594/
                         foo_quux876_cuid2594_000001_m.tif
@@ -108,6 +107,31 @@ Because the digital object directory name **must** match the `digi_id`, we have:
                         foo_quux876_cuid2594_000002_m.tif
                         foo_quux876_cuid2594_000002_d.tif
                         ...
+```
+
+---
+
+**Example 4:  `digi_id` = `<agreed-upon string>_<Component ID>`**  
+
+| Resource ID     | Ref ID  | Component ID |
+|-----------------|---------|--------------|
+| MSS.LaScala.001 | ref3412 | cuid50       |
+
+
+The agreed-upon string: `vxt_MSSLaScala001`  
+`Component ID` value  : `cuid50`  
+
+`digi_id` = **`vxt_MSSLaScala001_cuid50`**
+
+
+*required directory structure:*
+```
+   vxt_MSSLaScala001_cuid50/
+                           vxt_MSSLaScala001_cuid50_000001_m.tif
+                           vxt_MSSLaScala001_cuid50_000001_d.tif
+                           vxt_MSSLaScala001_cuid50_000002_m.tif
+                           vxt_MSSLaScala001_cuid50_000002_d.tif
+                           ...
 ```
 
 ---
