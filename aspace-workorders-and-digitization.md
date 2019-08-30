@@ -38,7 +38,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 ---
 
-**Example 1:  `digi_id` = `<Normalized Resource ID>_<Component ID>`**  
+**Example 1:  `digi_id` = `<Normalized Resource ID> + <Component ID>`**  
 
 
 | Resource ID | Ref ID                           | Component ID |
@@ -61,7 +61,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 ```
 ---
 
-**Example 2:  `digi_id` = `<Resource ID>_<Ref ID>`**  
+**Example 2:  `digi_id` = `<Resource ID> + <Ref ID>`**  
 
 | Resource ID | Ref ID | Component ID |
 |-------------|--------|--------------|
@@ -84,7 +84,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 ---
 
-**Example 3:  `digi_id` = `<partner code>_<collection code>_<Component ID>`**  
+**Example 3:  `digi_id` = `<partner code> + <collection code> + <Component ID>`**  
 
 | Resource ID | Ref ID                           | Component ID |
 |-------------|----------------------------------|--------------|
@@ -111,7 +111,7 @@ collection code: `quux876`
 
 ---
 
-**Example 4:  `digi_id` = `<agreed-upon string>_<Component ID>`**  
+**Example 4:  `digi_id` = `<agreed-upon string> + <Component ID>`**  
 
 | Resource ID     | Ref ID  | Component ID |
 |-----------------|---------|--------------|
