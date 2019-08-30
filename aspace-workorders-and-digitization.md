@@ -62,7 +62,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 ```
 ---
 
-**Example 2:  `digi_id` = `<Resource ID> + <Ref ID>`**  
+**Example 2:  `digi_id` = `<Normalized Resource ID> + <Ref ID>`**  
 
 | Resource ID | Ref ID | Component ID |
 |-------------|--------|--------------|
