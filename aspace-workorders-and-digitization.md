@@ -13,7 +13,7 @@ information in the ArchivesSpace work order, and that the
 **digital object directory name** matches the `digi_id`.
 
 
-#### generating the `digi_id`
+## Generating the `digi_id`
 For digitization projects with ArchivesSpace work orders, the `digi_id`  
 is formed by combining a string of characters (the `prefix`), with either  
 the work order `Ref ID` or `Component ID` values.  
