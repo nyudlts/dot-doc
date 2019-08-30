@@ -51,7 +51,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 `digi_id`: **`XY_MC_099_ref10_000001`**
 
-*directory structure:*
+**directory structure:**
 ```
    XY_MC_099_ref10_000001/
                           XY_MC_099_ref10_000001_000001_m.tif
@@ -73,7 +73,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 `digi_id`: **`BAR_937_ref442`**
 
-*directory structure:*
+**directory structure:**
 ```
    BAR_937_ref442/
                   BAR_937_ref442_000001_m.tif
@@ -100,7 +100,7 @@ collection code: `quux876`
 
 `digi_id` = **`foo_quux876_cuid2594`**
 
-*directory structure:*
+**directory structure:**
 ```
    foo_quux876_cuid2594/
                         foo_quux876_cuid2594_000001_m.tif
@@ -127,7 +127,7 @@ agreed-upon string: `vxt_MSSLaScala001`
 `digi_id` = **`vxt_MSSLaScala001_cuid50`**
 
 
-*directory structure:*
+**directory structure:**
 ```
    vxt_MSSLaScala001_cuid50/
                            vxt_MSSLaScala001_cuid50_000001_m.tif
