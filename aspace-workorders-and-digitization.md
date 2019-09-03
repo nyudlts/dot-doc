@@ -35,7 +35,7 @@ This means that the `digi_id` must conform to one of the following templates:
 **The project manager and digitization team should agree upon the  
 `digi_id` structure before digitization begins.**
 
-#### Examples:  
+## Examples:  
 The following examples show `digi_id`s generated using various `prefixes`.  
 ![](./aspace-legend.png)
 
