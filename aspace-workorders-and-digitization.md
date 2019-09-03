@@ -36,15 +36,13 @@ This means that the `digi_id` must conform to one of the following templates:
 
 #### Examples:  
 The following examples show `digi_id`s generated using various `prefixes`.  
+![](./aspace-legend.png)
 
 ---
 
 **Example 1:  `digi_id` = `<Normalized Resource ID> + <Component ID>`**  
 
-
-| Resource ID | Ref ID                           | Component ID |
-|-------------|----------------------------------|--------------|
-| XY.MC.099   | 731a6d52fd287ce04c86a4d82fd6b098 | ref10_000001 |
+![](./aspace-example-1.png)
 
 `prefix` = `XY_MC_099` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Component ID` = `ref10_000001`  
@@ -64,9 +62,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 **Example 2:  `digi_id` = `<Normalized Resource ID> + <Ref ID>`**  
 
-| Resource ID | Ref ID | Component ID |
-|-------------|--------|--------------|
-| BAR.937     | ref442 | 937.0123     |
+![](./aspace-example-2.png)
 
 `prefix` = `BAR_937` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Ref ID` = `ref442`   
@@ -87,9 +83,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 **Example 3:  `digi_id` = `<partner code> + <collection code> + <Component ID>`**  
 
-| Resource ID | Ref ID                           | Component ID |
-|-------------|----------------------------------|--------------|
-| QUUX.876    | ecc59b4631de477fb7f734fd80e208d1 | cuid2594     |
+![](./aspace-example-3.png)
 
 
 partner code: `foo`  
@@ -114,9 +108,7 @@ collection code: `quux876`
 
 **Example 4:  `digi_id` = `<agreed-upon string> + <Component ID>`**  
 
-| Resource ID     | Ref ID  | Component ID |
-|-----------------|---------|--------------|
-| MSS.LaScala.001 | ref3412 | cuid50       |
+![](./aspace-example-4.png)
 
 
 agreed-upon string: `vxt_MSSLaScala001`  
