@@ -20,8 +20,9 @@ the work order `Ref ID` or `Component ID` values.
 
 The `prefix` can be any string of characters that conforms to the rules  
 outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is usually either a normalized version of the  
-ArchivesSpace work order `Resource ID` value, or a combination of   
-partner and collection codes from the DLTS repository.  
+ArchivesSpace work order `Resource ID` value, a combination of   
+partner and collection codes from the DLTS repository, or a prefix string  
+selected by the project manager (PM) and the digitization team.  
 
 **The `digi_id` must end with either the `Ref ID` or the `Component ID`  
 value from the ArchivesSpace work order.**
@@ -86,8 +87,8 @@ The following examples show `digi_id`s generated using various `prefixes`.
 ![](./aspace-example-3.png)
 
 
-partner code: `foo`  
-collection code: `quux876`  
+DLTS Repository partner code: `foo`  
+DLTS Repository collection code: `quux876`  
 
 `prefix` = `foo_quux876`  
 `Component ID` = `cuid2594`  
@@ -106,12 +107,12 @@ collection code: `quux876`
 
 ---
 
-**Example 4:  `digi_id` = `<agreed-upon string> + <Component ID>`**  
+**Example 4:  `digi_id` = `<prefix string selected by PM and digitization team> + <Component ID>`**  
 
 ![](./aspace-example-4.png)
 
 
-agreed-upon string: `vxt_MSSLaScala001`  
+prefix string selected by PM and digitization team: `vxt_MSSLaScala001`  
 
 `prefix` = `vxt_MSSLaScala001`  
 `Component ID` = `cuid50`  
