@@ -36,7 +36,7 @@ The `digi_id` is formed by following a simple template:
 
 #### the `prefix`:
 The `prefix` can be any string of characters that conforms to the rules  
-outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is is **usually based on ONE of the following**:  
+outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is **usually based on ONE of the following**:  
 * the work order `Resource ID` 
 * the concatenation of the DLTS Repository `partner code` and `collection code`
 * a string of characters selected by the PM and DT
