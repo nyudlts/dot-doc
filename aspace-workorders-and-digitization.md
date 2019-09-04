@@ -75,7 +75,7 @@ Legend:
 `prefix` = `XY_MC_099` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Component ID` = `abc10_000001`  
 
-`digi_id`: **`XY_MC_099_ref10_000001`**
+`digi_id`: **`XY_MC_099_abc10_000001`**
 
 **directory structure:**
 ```
