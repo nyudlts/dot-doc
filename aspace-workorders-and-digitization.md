@@ -36,16 +36,16 @@ The `digi_id` is formed by following a simple template:
 
 #### the `prefix`:
 The `prefix` can be any string of characters that conforms to the rules  
-outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is is usually based on **one** of the following:
+outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is is usually based on **ONE** of the following:
 * the work order `Resource ID` 
-* **OR** the concatenation of the DLTS Repository `partner code` and `collection code`
-* **OR** a string of characters selected by the PM and DT
+* the concatenation of the DLTS Repository `partner code` and `collection code`
+* a string of characters selected by the PM and DT
 <br>
 
 #### the `suffix`:
-The `suffix ` comes from the ArchivesSpace work order and **MUST** be one of the following:
+The `suffix ` comes from the ArchivesSpace work order and **MUST be ONE of the following**:
 * the `Component ID` 
-* **OR** the `Ref ID` 
+* the `Ref ID` 
 <br>
 
 
