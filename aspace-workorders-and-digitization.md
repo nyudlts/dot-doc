@@ -12,7 +12,7 @@ ArchivesSpace.
 information in the ArchivesSpace work order, and that the   
 **digital object directory name** matches the `digi_id`.
 
-**The project manager (PM) and the digitization team should  
+**The project manager (PM) and the Digitization Team (DT) should  
 agree on the `digi_id` form before digitization begins.**
 
 
@@ -45,21 +45,23 @@ outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names
 
 #### the `suffix`:
 The `suffix ` comes from the ArchivesSpace work order and **MUST** be one of the following:
-* the `Ref ID` 
 * the `Component ID` 
+* the `Ref ID` 
 <br>
 
 #### the `digi_id` template
 Given the rules outlined above, the `digi_id` **must conform** to one of the  
 following two templates:  
-`<prefix>_<Ref ID>`  
-**or**  
 `<prefix>_<Component ID>`  
+**or**  
+`<prefix>_<Ref ID>`  
 
 
 
 ## Examples:  
-The following examples show `digi_id`s generated using various `prefixes`.  
+The following examples show `digi_id`s generated using various `prefixes`\.   
+Angle brackets `< >` indicate where actual values need to be substituted to  
+form the `digi_id`.  
 
 Legend:  
 ![](./images/aspace-legend.png)
@@ -86,7 +88,7 @@ Legend:
 ```
 ---
 
-**Example 2:  `digi_id` = `<Normalized Resource ID> + <Ref ID>`**  
+#### Example 2:  `digi_id` = `<Normalized Resource ID>_<Ref ID>`  
 
 ![](./images/aspace-example-2.png)
 
@@ -107,13 +109,11 @@ Legend:
 
 ---
 
-**Example 3:  `digi_id` = `<partner code> + <collection code> + <Component ID>`**  
+#### Example 3:  `digi_id` = `<partner code>_<collection code>_<Component ID>`  
+
+![](./images/aspace-example-3-prefix.png)
 
 ![](./images/aspace-example-3.png)
-
-
-DLTS Repository partner code: `foo`  
-DLTS Repository collection code: `quux876`  
 
 `prefix` = `foo_quux876`  
 `Component ID` = `cuid2594`  
@@ -132,12 +132,12 @@ DLTS Repository collection code: `quux876`
 
 ---
 
-**Example 4:  `digi_id` = `<prefix string selected by PM and digitization team> + <Component ID>`**  
+#### Example 4:  `digi_id` = `<prefix selected by PM and DT>_<Component ID>`
+
+![](./images/aspace-example-4-prefix.png)
 
 ![](./images/aspace-example-4.png)
 
-
-prefix string selected by PM and digitization team: `vxt_MSSLaScala001`  
 
 `prefix` = `vxt_MSSLaScala001`  
 `Component ID` = `cuid50`  
