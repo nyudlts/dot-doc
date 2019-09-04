@@ -30,8 +30,7 @@ In the examples below, only the three columns used to form
 
 
 ## Generating the `digi_id`
-For digitization projects with ArchivesSpace work orders, the `digi_id`  
-follows a simple template:
+The `digi_id` is formed by following a simple template:  
 #### `digi_id = <prefix>_<suffix>`  
 <br>
 
