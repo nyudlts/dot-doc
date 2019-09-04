@@ -43,7 +43,8 @@ outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names
 <br>
 
 #### the `suffix`:
-The `suffix ` comes from the ArchivesSpace work order and **MUST be ONE of the following**:
+The `suffix ` comes from the ArchivesSpace work order and  
+**MUST be ONE of the following**  
 * the `Component ID` 
 * the `Ref ID` 
 <br>
