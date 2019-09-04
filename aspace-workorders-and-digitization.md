@@ -1,8 +1,8 @@
 ## ArchivesSpace Work Orders and Digitization
 
 ArchivesSpace work orders contain information required to properly  
-name digital object directories and files.  This name is the digitization  
-identifier, or `digi_id`.  
+name digital object directories and files.  This name is the "digitization  
+identifier", or `digi_id`.  
 
 DLTS uses the `digi_id` to look up the ArchivesSpace archival object URI  
 which is required to load persistent URLs for the digital objects into  
@@ -12,58 +12,83 @@ ArchivesSpace.
 information in the ArchivesSpace work order, and that the   
 **digital object directory name** matches the `digi_id`.
 
+**The project manager (PM) and the digitization team should  
+agree on the `digi_id` form before digitization begins.**
+
+
+## ArchivesSpace Work Orders
+The ArchivesSpace work orders have the following fields:
+
+| Resource ID | Ref ID | URI | Container Indicator 1 | Container Indicator 2 | Container Indicator 3 | Title | Component ID |
+|-------------|--------|-----|-----------------------|-----------------------|-----------------------|-------|--------------|
+
+In the examples below, only the three columns used to form  
+`digi_id`s will be shown:
+
+| Resource ID | Ref ID | Component ID |
+|-------------|--------|--------------|
+
 
 ## Generating the `digi_id`
 For digitization projects with ArchivesSpace work orders, the `digi_id`  
-is formed by combining a string of characters (the `prefix`), with either  
-the work order `Ref ID` or `Component ID` values.  
+follows a simple template:
+#### `digi_id = <prefix>_<suffix>`  
+<br>
 
+#### the `prefix`:
 The `prefix` can be any string of characters that conforms to the rules  
-outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is usually either a normalized version of the  
-ArchivesSpace work order `Resource ID` value, a combination of   
-partner and collection codes from the DLTS repository, or a prefix string  
-selected by the project manager (PM) and the digitization team.  
+outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is is usually based on **one** of the following:
+* the work order `Resource ID` 
+* **or** the concatenation of the DLTS Repository `partner code` and `collection code`
+* **or** a string of characters selected by the PM and digitization team
+<br>
 
-**The `digi_id` must end with either the `Ref ID` or the `Component ID`  
-value from the ArchivesSpace work order.**
+#### the `suffix`:
+The `suffix ` comes from the ArchivesSpace work order and **MUST** be one of the following:
+* the `Ref ID` 
+* the `Component ID` 
+<br>
 
-This means that the `digi_id` must conform to one of the following templates:  
-* `<prefix>_<Ref ID>`  
-* `<prefix>_<Component ID>`  
+#### the `digi_id` template
+Given the rules outlined above, the `digi_id` **must conform** to one of the  
+following two templates:  
+`<prefix>_<Ref ID>`  
+**or**  
+`<prefix>_<Component ID>`  
 
 
-**The project manager and digitization team should agree upon the  
-`digi_id` structure before digitization begins.**
 
 ## Examples:  
 The following examples show `digi_id`s generated using various `prefixes`.  
-![](./aspace-legend.png)
+
+Legend:  
+![](./images/aspace-legend.png)
 
 ---
 
-**Example 1:  `digi_id` = `<Normalized Resource ID> + <Component ID>`**  
+#### Example 1:  `digi_id` = `<Normalized Resource ID>_<Component ID>`
 
-![](./aspace-example-1.png)
+![](./images/aspace-example-1.png)
 
 `prefix` = `XY_MC_099` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
-`Component ID` = `ref10_000001`  
+`Component ID` = `abc10_000001`  
 
 `digi_id`: **`XY_MC_099_ref10_000001`**
 
 **directory structure:**
 ```
-   XY_MC_099_ref10_000001/
-                          XY_MC_099_ref10_000001_000001_m.tif
-                          XY_MC_099_ref10_000001_000001_d.tif
-                          XY_MC_099_ref10_000001_000002_m.tif
-                          XY_MC_099_ref10_000001_000002_d.tif
+   XY_MC_099_abc10_000001/
+                          XY_MC_099_abc10_000001_000001_m.tif
+                          XY_MC_099_abc10_000001_000001_d.tif
+                          XY_MC_099_abc10_000001_000002_m.tif
+                          XY_MC_099_abc10_000001_000002_d.tif
                           ...
 ```
 ---
 
 **Example 2:  `digi_id` = `<Normalized Resource ID> + <Ref ID>`**  
 
-![](./aspace-example-2.png)
+![](./images/aspace-example-2.png)
 
 `prefix` = `BAR_937` (`Resource ID` value normalized per [these rules](./README.md#characters-allowed-in-directory-names-and-file-names).)  
 `Ref ID` = `ref442`   
@@ -84,7 +109,7 @@ The following examples show `digi_id`s generated using various `prefixes`.
 
 **Example 3:  `digi_id` = `<partner code> + <collection code> + <Component ID>`**  
 
-![](./aspace-example-3.png)
+![](./images/aspace-example-3.png)
 
 
 DLTS Repository partner code: `foo`  
@@ -109,7 +134,7 @@ DLTS Repository collection code: `quux876`
 
 **Example 4:  `digi_id` = `<prefix string selected by PM and digitization team> + <Component ID>`**  
 
-![](./aspace-example-4.png)
+![](./images/aspace-example-4.png)
 
 
 prefix string selected by PM and digitization team: `vxt_MSSLaScala001`  

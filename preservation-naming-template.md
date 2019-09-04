@@ -59,10 +59,10 @@ have front matter or back matter.
   * **oversized numbered pages**: images of large pages that have a page number and require multiple master files to fully image
   * **oversized insert pages**: images of large pages that DO NOT have a page number and require multiple master files to fully image
   
-  ![](./insert-example.png)
+  ![](./images/insert-example.png)
   * **oversized pages**: images of pages that require multiple `master` files  
     to capture. The `master` files are stitched together to create a single `dmaker` file  
-  ![](./oversized-example.png)
+  ![](./images/oversized-example.png)
 
   ### template
   * generic template: <code>&lt;digi_id&gt;<b>\_</b>&lt;sequence number&gt;<b>\_</b>&lt;role&gt;<b>.tif</b></code>
