@@ -56,7 +56,7 @@ The following examples show `digi_id`s generated using various `prefixes`\.
 Angle brackets `< >` indicate where actual values need to be substituted to  
 form the `digi_id`.  
 
-Legend:  
+**Legend:**  
 ![](./images/aspace-legend.png)
 
 ---
