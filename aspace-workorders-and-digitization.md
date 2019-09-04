@@ -39,7 +39,7 @@ The `prefix` can be any string of characters that conforms to the rules
 outlined [here](./README.md#characters-allowed-in-directory-names-and-file-names),  but is is usually based on **one** of the following:
 * the work order `Resource ID` 
 * **or** the concatenation of the DLTS Repository `partner code` and `collection code`
-* **or** a string of characters selected by the PM and digitization team
+* **or** a string of characters selected by the PM and DT
 <br>
 
 #### the `suffix`:
