@@ -27,7 +27,7 @@ In the examples below, only the three columns used to form
 
 | Resource ID | Ref ID | Component ID |
 |-------------|--------|--------------|
-
+<br>
 
 ## Generating the `digi_id`
 The `digi_id` is formed by following a simple template:  
