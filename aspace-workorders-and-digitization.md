@@ -17,7 +17,7 @@ agree on the `digi_id` form before digitization begins.**
 
 
 ## ArchivesSpace Work Orders
-The ArchivesSpace work orders have the following fields:
+ArchivesSpace work orders have the following fields:
 
 | Resource ID | Ref ID | URI | Container Indicator 1 | Container Indicator 2 | Container Indicator 3 | Title | Component ID |
 |-------------|--------|-----|-----------------------|-----------------------|-----------------------|-------|--------------|
