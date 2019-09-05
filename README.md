@@ -70,6 +70,11 @@ the `bookeye` workflow, all of which result in a different set of files in the `
         and   tif                  is the filename "extension"
   ```
 
+**PLEASE NOTE:**  
+**THE ABOVE REQUIREMENTS APPLY TO DISK DRIVE NAMES AND DIRECTORY PATHS**  
+**No spaces or special characters are allowed in drive names or directory paths!**  
+
+
 * examples:
   ```
   # GOOD
