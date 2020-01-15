@@ -15,13 +15,13 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
-| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file | README.txt<br>file | naming<br>template                        |
-|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:-----------:|:------------------:|-------------------------------------------|
-| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED    | optional           | [link](./preservation-naming-template.md) |
-| book      | `access`         | ---             | REQUIRED        | ---               | ---         | optional           | [link](./access-naming-template.md)       |
-| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED    | optional           | [link](./bookeye-naming-template.md)      |
-| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
-| image set | `access`         | ---             | REQUIRED        | ---               | ---         | optional           | [link](./access-naming-template.md)       |
+| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file    | README.txt<br>file | naming<br>template                        |
+|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:--------------:|:------------------:|-------------------------------------------|
+| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED       | optional           | [link](./preservation-naming-template.md) |
+| book      | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
+| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED       | optional           | [link](./bookeye-naming-template.md)      |
+| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional       | optional           | [link](./preservation-naming-template.md) |
+| image set | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
 
 
 ### Terms Used
