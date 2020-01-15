@@ -15,7 +15,7 @@
 * generic template:
   * `<digi_id>_<sequence number>_<role>.tif`
     * `digi_id`: the `digitization id` assigned to the `digital object`.  
-     N.B. the `digi_id` might be the identifier assigned by the depositor.
+     N.B. the `digi_id` might be an identifier assigned by the depositor.
     * `sequence number`: an integer padded with leading-zeros as needed,  
     e.g., `000007`, that indicates the order of the corresponding image in the item  
     * `role`: the role of the file, e.g., `original`, `dmaker`
