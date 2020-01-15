@@ -20,7 +20,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | book      | `preservation`   | REQ.            | ---               | REQ.            | REQ.              | REQ.        | optional           | [link](./preservation-naming-template.md) |
 | image set | `preservation`   | REQ.            | ---               | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
 | book      | `bookeye`        | ---             | ---               | REQ.            | ---               | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
-| book      | `access`         | ---             | ---               | REQ.            | ---               | NO          | optional           | [link](./access-naming-template.md)       |
+| book      | `access`         | ---             | ---               | REQ.            | ---               | *NO*          | optional           | [link](./access-naming-template.md)       |
 | book      | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 | image set | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 
