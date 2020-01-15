@@ -21,7 +21,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | book      | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
 | book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED       | optional           | [link](./bookeye-naming-template.md)      |
 | image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional       | optional           | [link](./preservation-naming-template.md) |
-| image set | `access`         | ---             | REQUIRED        | ---               | ---            | optional           | [link](./access-naming-template.md)       |
+| image set | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
 
 
 ### Terms Used
