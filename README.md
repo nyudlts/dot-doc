@@ -23,6 +23,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | book      | `bookeye`        | ---             | ---               | REQ.            | ---               | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
 | book      | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 | image set | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+
 `REQ.` = `REQUIRED`
 `NO` = `DO NOT INCLUDE`
 
