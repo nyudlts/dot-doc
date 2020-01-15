@@ -15,16 +15,16 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
-| DOT       | workflow<br>name | master<br>files | original<br>files | dmaker<br>files | session<br>target | EOC<br>file    | README.txt<br>file | naming<br>template                        |
-|-----------|:----------------:|:---------------:|:-----------------:|:---------------:|:-----------------:|:--------------:|:------------------:|-------------------------------------------|
-| book      | `preservation`   | REQUIRED        | ---               | REQUIRED        | REQUIRED          | REQUIRED       | optional           | [link](./preservation-naming-template.md) |
-| book      | `access`         | ---             | ---               | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
-| book      | `bookeye`        | ---             | ---               | REQUIRED        | ---               | REQUIRED       | optional           | [link](./bookeye-naming-template.md)      |
-| book      | `born digital`   | ---             | REQUIRED          | REQUIRED        | ---               | ---            | optional           | [link](./bookeye-naming-template.md)      |
-| image set | `preservation`   | REQUIRED        | ---               | REQUIRED        | optional          | optional       | optional           | [link](./preservation-naming-template.md) |
-| image set | `access`         | ---             | ---               | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
-| image set | `born digital`   | ---             | REQUIRED          | REQUIRED        | ---               | ---            | optional           | [link](./preservation-naming-template.md) |
-
+| DOT       | workflow<br>name | master<br>files | original<br>files | dmaker<br>files | session<br>target | EOC<br>file | README.txt<br>file | naming<br>template                        |
+|-----------|:----------------:|:---------------:|:-----------------:|:---------------:|:-----------------:|:-----------:|:------------------:|-------------------------------------------|
+| book      | `preservation`   | REQ.            | ---               | REQ.            | REQ.              | REQ.        | optional           | [link](./preservation-naming-template.md) |
+| image set | `preservation`   | REQ.            | ---               | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
+| book      | `access`         | ---             | ---               | REQ.            | ---               | NO          | optional           | [link](./access-naming-template.md)       |
+| book      | `bookeye`        | ---             | ---               | REQ.            | ---               | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
+| book      | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+| image set | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+`REQ.` = `REQUIRED`
+`NO` = `DO NOT INCLUDE`
 
 ### Terms Used
 * `item`: a (physical) object being digitized
