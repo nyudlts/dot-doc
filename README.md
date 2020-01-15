@@ -15,13 +15,15 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 
 ## Digital Object Types (`DOT`s) and Digitization Workflows
 
-| DOT       | workflow<br>name | master<br>files | dmaker<br>files | session<br>target | EOC<br>file    | README.txt<br>file | naming<br>template                        |
-|-----------|:----------------:|:---------------:|:---------------:|:-----------------:|:--------------:|:------------------:|-------------------------------------------|
-| book      | `preservation`   | REQUIRED        | REQUIRED        | REQUIRED          | REQUIRED       | optional           | [link](./preservation-naming-template.md) |
-| book      | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
-| book      | `bookeye`        | ---             | REQUIRED        | ---               | REQUIRED       | optional           | [link](./bookeye-naming-template.md)      |
-| image set | `preservation`   | REQUIRED        | REQUIRED        | optional          | optional       | optional           | [link](./preservation-naming-template.md) |
-| image set | `access`         | ---             | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
+| DOT       | workflow<br>name | master<br>files | original<br>files | dmaker<br>files | session<br>target | EOC<br>file    | README.txt<br>file | naming<br>template                        |
+|-----------|:----------------:|:---------------:|:-----------------:|:---------------:|:-----------------:|:--------------:|:------------------:|-------------------------------------------|
+| book      | `preservation`   | REQUIRED        | ---               | REQUIRED        | REQUIRED          | REQUIRED       | optional           | [link](./preservation-naming-template.md) |
+| book      | `access`         | ---             | ---               | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
+| book      | `bookeye`        | ---             | ---               | REQUIRED        | ---               | REQUIRED       | optional           | [link](./bookeye-naming-template.md)      |
+| book      | `born digital`   | ---             | REQUIRED          | REQUIRED        | ---               | ---            | optional           | [link](./bookeye-naming-template.md)      |
+| image set | `preservation`   | REQUIRED        | ---               | REQUIRED        | optional          | optional       | optional           | [link](./preservation-naming-template.md) |
+| image set | `access`         | ---             | ---               | REQUIRED        | ---               | DO NOT INCLUDE | optional           | [link](./access-naming-template.md)       |
+| image set | `born digital`   | ---             | REQUIRED          | REQUIRED        | ---               | ---            | optional           | [link](./preservation-naming-template.md) |
 
 
 ### Terms Used
@@ -45,6 +47,11 @@ e.g., `preservation`, `access`, `bookeye`
 a `digitization workflow`. For example, a book item can be digitized using various  
 `digitization workflows`, e.g., the `preservation` workflow, the `access` workflow,  
 the `bookeye` workflow, all of which result in a different set of files in the `digital object`.
+* `born digital`: a term used for files and/or digital objects created outside of   
+a NYU-specified digitization workflow, e.g., an independent photographer provides a set of  
+`original` files to NYU DLTS that may or may not pass file format validation.   
+A `dmaker` file is created for each `original` file to facilitate content publication.
+
 
 ### Template Notation
 * naming templates are used throughout this documentation
