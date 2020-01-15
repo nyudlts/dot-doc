@@ -24,7 +24,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | book      | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 | image set | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 
-`REQ.` = `REQUIRED`
+`REQ.` = `REQUIRED`  
 `NO` = `DO NOT INCLUDE`
 
 ### Terms Used
