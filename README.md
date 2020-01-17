@@ -17,12 +17,15 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 
 | DOT       | workflow<br>name | master<br>files | original<br>files | dmaker<br>files | session<br>target | EOC<br>file | README.txt<br>file | naming<br>template                        |
 |-----------|:----------------:|:---------------:|:-----------------:|:---------------:|:-----------------:|:-----------:|:------------------:|-------------------------------------------|
-| book      | `preservation`   | REQ.            | ---               | REQ.            | REQ.              | REQ.        | optional           | [link](./preservation-naming-template.md) |
-| image set | `preservation`   | REQ.            | ---               | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
-| book      | `bookeye`        | ---             | ---               | REQ.            | ---               | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
-| book      | `access`         | ---             | ---               | REQ.            | ---               | **NO**      | optional           | [link](./access-naming-template.md)       |
-| book      | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
-| image set | `born digital`   | ---             | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+| book      | `preservation`   | REQ.            | NO                | REQ.            | REQ.              | REQ.        | optional           | [link](./preservation-naming-template.md) |
+| image set | `preservation`   | REQ.            | NO                | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
+| book      | `bookeye`        | NO              | NO                | REQ.            | REQ. *            | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
+| book      | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
+| image_set | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
+| book      | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+| image set | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+* in the Bookeye Workflow, the session target **MUST** be named `<digi_id>_000001.tif`.  
+  Please refer to [the Bookeye naming template](./bookeye-naming-template.md) for more information.
 
 `REQ.` = `REQUIRED`  
 `NO` = `DO NOT INCLUDE`
