@@ -24,11 +24,11 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | image_set | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
 | book      | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 | image set | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
-* in the Bookeye Workflow, the session target **MUST** be named `<digi_id>_000001.tif`.  
-  Please refer to [the Bookeye naming template](./bookeye-naming-template.md) for more information.
 
 `REQ.` = `REQUIRED`  
 `NO` = `DO NOT INCLUDE`
+* in the Bookeye Workflow, the session target **MUST** be named `<digi_id>_000001.tif`.  
+  Please refer to [the Bookeye naming template](./bookeye-naming-template.md) for more information.
 
 ### Terms Used
 * `item`: a (physical) object being digitized
