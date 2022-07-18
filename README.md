@@ -23,7 +23,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | book      | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
 | image_set | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
 | book      | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
-| image set | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
+| image_set | `born digital`   | NO              | REQ.              | REQ.            | ---               | ---         | optional           | [link](./born-digital-naming-template.md) |
 
 `REQ.` = `REQUIRED`  
 `NO` = `DO NOT INCLUDE`
