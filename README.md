@@ -18,7 +18,7 @@ digitization identifiers please see [this document](./aspace-workorders-and-digi
 | DOT       | workflow<br>name | master<br>files | original<br>files | dmaker<br>files | session<br>target | EOC<br>file | README.txt<br>file | naming<br>template                        |
 |-----------|:----------------:|:---------------:|:-----------------:|:---------------:|:-----------------:|:-----------:|:------------------:|-------------------------------------------|
 | book      | `preservation`   | REQ.            | NO                | REQ.            | REQ.              | REQ.        | optional           | [link](./preservation-naming-template.md) |
-| image set | `preservation`   | REQ.            | NO                | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
+| image_set | `preservation`   | REQ.            | NO                | REQ.            | optional          | optional    | optional           | [link](./preservation-naming-template.md) |
 | book      | `bookeye`        | NO              | NO                | REQ.            | REQ. *            | REQ.        | optional           | [link](./bookeye-naming-template.md)      |
 | book      | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
 | image_set | `access`         | NO              | NO                | REQ.            | NO                | **NO**      | optional           | [link](./access-naming-template.md)       |
