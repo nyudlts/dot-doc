@@ -1,9 +1,38 @@
 ## Preservation Media Lab A/V naming template
 
+### Current Template:
 ```
-"Content-Split" Naming Template:
+A/V File Naming Template (no "Content-Split"): 
 
-* JHOVE used to fail .wav files that were larger than 4 GB.
+The naming template at the time of this writing is:
+<partner code>_<collection identifier>_<archival object ID><source item sequence identifier>_<file sequence, e.g., side A>_<file role>.<file extension>
+
+|--------------------------------------+----------+----------+----------+--------+------|
+|                                      |          |  source  |          |        |      |
+|                                      |          |   item   |          |        |      |
+| file name                            | archival | sequence |   file   |  file  | file |
+|                                      |  object  |    id    | sequence |  role  | ext  |
+|--------------------------------------+----------+----------+----------+--------+------|
+| tamwag_TAM-709_cuid168A_000001_d.wav | cuid168  |    A     |    1     | dmaker | wav  |
+| tamwag_TAM-709_cuid168A_000001_m.wav |    "     |    "     |    "     | master |  "   |
+|                                      |          |          |          |        |      |
+| tamwag_TAM-709_cuid168A_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
+| tamwag_TAM-709_cuid168A_000002_m.wav |    "     |    "     |    "     | master |  "   |
+|                                      |          |          |          |        |      |
+| tamwag_TAM-709_cuid168B_000001_d.wav |    "     |    B     |    1     | dmaker |  "   |
+| tamwag_TAM-709_cuid168B_000001_m.wav |    "     |    "     |    "     | master |  "   |
+|                                      |          |          |          |        |      |
+| tamwag_TAM-709_cuid168B_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
+| tamwag_TAM-709_cuid168B_000002_m.wav |    "     |    "     |    "     | master |  "   |
+|--------------------------------------+----------+----------+----------+--------+------|
+```
+
+##
+### Legacy Template:
+```
+"Content-Split" File Naming Template: 
+
+* JHOVE used to fail .wav files that were larger than 4 GB. [1]
   (https://wiki.dpconline.org/images/4/46/WAV_Assessment_v1.0.pdf)
 
   This file-size upper limit required content to be split
@@ -33,34 +62,8 @@ Example: fales/mss326:
 | 326_0003_000002_B_d.wav |    "     |   "    |   B   | dmaker |  "   |
 | 326_0003_000002_B_m.wav |    "     |   "    |   "   | master |  "   |
 |-------------------------+----------+--------+-------+--------+------|
-```
 
-```
-Non-"Content Split" Naming Template:
-
-Now that the .wav file upper limit does not cause JHOVE validation to fail,
-content no longer needs to be split.
-
-Therefore, the naming template at the time of this writing is:
-
-<partner code>_<collection identifier>_<archival object ID><source item sequence identifier>_<file sequence, e.g., side A>_<file role>.<file extension>
-
-|--------------------------------------+----------+----------+----------+--------+------|
-|                                      |          |  source  |          |        |      |
-|                                      |          |   item   |          |        |      |
-| file name                            | archival | sequence |   file   |  file  | file |
-|                                      |  object  |    id    | sequence |  role  | ext  |
-|--------------------------------------+----------+----------+----------+--------+------|
-| tamwag_TAM-709_cuid168A_000001_d.wav | cuid168  |    A     |    1     | dmaker | wav  |
-| tamwag_TAM-709_cuid168A_000001_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168A_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
-| tamwag_TAM-709_cuid168A_000002_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168B_000001_d.wav |    "     |    B     |    1     | dmaker |  "   |
-| tamwag_TAM-709_cuid168B_000001_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168B_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
-| tamwag_TAM-709_cuid168B_000002_m.wav |    "     |    "     |    "     | master |  "   |
-|--------------------------------------+----------+----------+----------+--------+------|
+[1] The JHOVE WAV validation module now accepts files larger than 4GB,   
+    so the content does not need to be split. Therefore, the  
+    "Content-Split" naming template is no longer used.
 ```
