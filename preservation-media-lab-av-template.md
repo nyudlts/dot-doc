@@ -6,7 +6,7 @@ A/V File Naming Template (no "Content-Split", with "version" option):
 
 The naming template at the time of this writing is:
 
-    <pc>_<ci>_<aoi>[<sis>][_<fs>][_tv]_<fr>.<fe>
+    <pc>_<ci>_<aoi>[<sis>][_<fs>][_<tv>]_<fr>.<fe>
 
 where:
     pc  = partner code
