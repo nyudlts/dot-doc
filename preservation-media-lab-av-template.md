@@ -2,29 +2,51 @@
 
 ### Current Template:
 ```
-A/V File Naming Template (no "Content-Split"): 
+A/V File Naming Template (no "Content-Split", with "version" option): 
 
 The naming template at the time of this writing is:
-<partner code>_<collection identifier>_<archival object ID><source item sequence identifier>_<file sequence, e.g., side A>_<file role>.<file extension>
 
-|--------------------------------------+----------+----------+----------+--------+------|
-|                                      |          |  source  |          |        |      |
-|                                      |          |   item   |          |        |      |
-| file name                            | archival | sequence |   file   |  file  | file |
-|                                      |  object  |    id    | sequence |  role  | ext  |
-|--------------------------------------+----------+----------+----------+--------+------|
-| tamwag_TAM-709_cuid168A_000001_d.wav | cuid168  |    A     |    1     | dmaker | wav  |
-| tamwag_TAM-709_cuid168A_000001_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168A_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
-| tamwag_TAM-709_cuid168A_000002_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168B_000001_d.wav |    "     |    B     |    1     | dmaker |  "   |
-| tamwag_TAM-709_cuid168B_000001_m.wav |    "     |    "     |    "     | master |  "   |
-|                                      |          |          |          |        |      |
-| tamwag_TAM-709_cuid168B_000002_d.wav |    "     |    "     |    2     | dmaker |  "   |
-| tamwag_TAM-709_cuid168B_000002_m.wav |    "     |    "     |    "     | master |  "   |
-|--------------------------------------+----------+----------+----------+--------+------|
+    <pc>_<ci>_<aoi>[<sis>][_<fs>][_tv]_<fr>.<fe>
+
+where:
+    pc  = partner code
+    ci  = collection identifier
+    aoi = archival object ID
+    sis = source item sequence identifier, e.g., first tape of a set        [optional]
+    fs  = file sequence, e.g., side A                                       [optional]
+    tv  = take/version indicating different attempts at digitizing an asset [optional]
+    fr  = file role, e.g., master, derivative maker (mezzanine)
+    fe  = file extension
+
+
+|--------------------------------------+-----------+----------+----------+---------+--------+------|
+|                                      |           | source   |          |         |        |      |
+|                                      |           | item     |          |         |        |      |
+| file name                            | archival  | sequence | file     | take/   | file   | file |
+|                                      | object    | id       | sequence | version | role   | ext  |
+|--------------------------------------+-----------+----------+----------+---------+--------+------|
+| tamwag_TAM-709_cuid168A_000001_d.wav | cuid168   | A        | 1        | n/a     | dmaker | wav  |
+| tamwag_TAM-709_cuid168A_000001_m.wav | "         | "        | "        | "       | master | "    |
+|                                      |           |          |          |         |        |      |
+| tamwag_TAM-709_cuid168A_000002_d.wav | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM-709_cuid168A_000002_m.wav | "         | "        | "        | "       | master | "    |
+|                                      |           |          |          |         |        |      |
+| tamwag_TAM-709_cuid168B_000001_d.wav | "         | B        | 1        | "       | dmaker | "    |
+| tamwag_TAM-709_cuid168B_000001_m.wav | "         | "        | "        | "       | master | "    |
+|                                      |           |          |          |         |        |      |
+| tamwag_TAM-709_cuid168B_000002_d.wav | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM-709_cuid168B_000002_m.wav | "         | "        | "        | "       | master | "    |
+|                                      |           |          |          |         |        |      |
+| fales_mss547_cuid41188_v1_m.mov      | cuid41188 | n/a      | n/a      | take 1  | master | mov  |
+| fales_mss547_cuid41188_v1_d.mov      | "         | "        | "        | "       | dmaker | "    |
+|                                      |           |          |          |         |        |      |
+| fales_mss547_cuid41188_v2_m.mov      | "         | n/a      | n/a      | take 2  | master | mov  |
+| fales_mss547_cuid41188_v2_d.mov      | "         | "        | "        | "       | dmaker | "    |
+|--------------------------------------+-----------+----------+----------+---------+--------+------|
+* the "take/version" field is used to differentiate digitization passes of the same source asset.
+  v1 denotes the first  attempt at digitizing the asset
+  v2 denotes the second attempt at digitizing the asset
+  ...
 ```
 
 ##
