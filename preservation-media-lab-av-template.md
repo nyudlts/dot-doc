@@ -13,7 +13,7 @@ where:
     ci  = collection identifier
     aoi = archival object ID
     sis = source item sequence identifier, e.g., first tape of a set        [optional]
-    fs  = file sequence, e.g., side A                                       [optional]
+    fs  = file sequence, e.g., 000001 -> tape side A, 000002 -> tape side B [optional]
     tv  = take/version indicating different attempts at digitizing an asset [optional]
     fr  = file role, e.g., master, derivative maker (mezzanine)
     fe  = file extension
