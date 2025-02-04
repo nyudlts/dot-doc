@@ -1,4 +1,4 @@
-## `preservation` workflow naming template
+## `preservation` workflow naming template for `books` and book-like items
 
 ### examples: ([template details](#template) below)
   * front matter:
