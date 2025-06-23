@@ -37,6 +37,9 @@ where:
 | tamwag_TAM-709_cuid168B_000002_d.wav | "         | "        | 2        | "       | dmaker | "    |
 | tamwag_TAM-709_cuid168B_000002_m.wav | "         | "        | "        | "       | master | "    |
 |                                      |           |          |          |         |        |      |
+| fales_mss231_cuid45678_m.mov         | cuid45678 | n/a      | n/a      | n/a     | master | mov  |
+| fales_mss231_cuid45678_d.mov         | "         | "        | "        | "       | dmaker | "    |
+|                                      |           |          |          |         |        |      |
 | fales_mss547_cuid41188_v1_m.mov      | cuid41188 | n/a      | n/a      | take 1  | master | mov  |
 | fales_mss547_cuid41188_v1_d.mov      | "         | "        | "        | "       | dmaker | "    |
 |                                      |           |          |          |         |        |      |
