@@ -52,6 +52,27 @@ where:
   ...
 ```
 
+
+##
+### HDV Template and Package Structure:
+
+Notes:  
+
+* There are multiple master files per dmaker file
+* The master file index starts with `000000`
+
+```text
+tamwag_tam222_cuid24601
+     ↳ 20250920-HDV_Sony_HVRM25AU-LL2-EOC.xls [environment-of-creation file]
+     ↳ tamwag_tam222_cuid24601_d.mpg          [1920x1080 MPEG-2, combining all _m files]
+     ↳ tamwag_tam222_cuid24601_000000_m.m2t   [native 1440x1080 MPEG-2 video clips] 
+     ↳ tamwag_tam222_cuid24601_000001_m.m2t
+     ↳ tamwag_tam222_cuid24601_000002_m.m2t
+     ↳ tamwag_tam222_cuid24601_000003_m.m2t
+     ↳ tamwag_tam222_cuid24601_000004_m.m2t
+     ↳ tamwag_tam222_cuid24601_s.mp4          [1920x1080 H264, same video content as _d]
+```
+
 ##
 ### Legacy Template:
 ```
@@ -92,3 +113,4 @@ Example: fales/mss326:
     so the content does not need to be split. Therefore, the  
     "Content-Split" naming template is no longer used.
 ```
+
