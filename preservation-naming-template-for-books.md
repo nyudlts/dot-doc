@@ -46,7 +46,7 @@
 
 #### Please note:   
 When using the `preservation` workflow for digitizing `image sets`\, e.g., folders of unbound documents,  
-the ["numbered pages" specific template](#specific-templates) should be used because a folder of unbound documents does not  
+the ["numbered pages" specific template](./preservation-naming-template-for-image_sets.md) should be used because a folder of unbound documents does not  
 have front matter or back matter.
 
 

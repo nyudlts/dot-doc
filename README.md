@@ -1,4 +1,4 @@
-## Digital Object Naming Requirements `v0.3.0`
+## Digital Object Naming Requirements `v0.3.1`
 This repository specifies the file and naming conventions used by  
 New York University's Digital Library Technology Services department.  
 All digital object files must conform to these file naming specifications.
