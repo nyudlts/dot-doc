@@ -1,6 +1,59 @@
 ## Preservation Media Lab A/V naming template
 
 ### Current Template:
+
+#### NOTE:
+* When renaming creating a directory and naming content files within that directory,  
+  **the beginning of the content filenames must match the directory name**.
+  e.g.,
+```
+#--------------------------------------------------------------
+# NOT GOOD:
+# mismatch between directory name : tamwag_ABC123_cuid15026
+#                                          ^^^
+# and content-file filename prefix: tamwag_abc123_cuid15026
+#                                          ^^^
+#--------------------------------------------------------------
+       vvv
+tamwag_ABC123_cuid15026
+    ├── 20120416-CASSETTE-LL2-EOC.xls
+    ├── ReadMe.txt
+    ├── tamwag_ABC123_20151106.xlsx
+    ├── tamwag_abc123_cuid15026_000001_d.wav
+    ├── tamwag_abc123_cuid15026_000001_m.wav
+    ├── tamwag_abc123_cuid15026_000002_d.wav
+    └── tamwag_abc123_cuid15026_000002_m.wav
+               ^^^
+
+#--------------------------------------------------------------
+# GOOD: (lowercase collection code)
+# match between directory name     : tamwag_abc123_cuid15026
+# and content-file filename prefix : tamwag_abc123_cuid15026
+#--------------------------------------------------------------
+tamwag_abc123_cuid15026
+    ├── 20120416-CASSETTE-LL2-EOC.xls
+    ├── ReadMe.txt
+    ├── tamwag_abc123_20151106.xlsx
+    ├── tamwag_abc123_cuid15026_000001_d.wav
+    ├── tamwag_abc123_cuid15026_000001_m.wav
+    ├── tamwag_abc123_cuid15026_000002_d.wav
+    └── tamwag_abc123_cuid15026_000002_m.wav
+
+#--------------------------------------------------------------
+# ALSO GOOD: (capitalized collection code)
+# match between directory name     : tamwag_ABC123_cuid15026
+# and content-file filename prefix : tamwag_ABC123_cuid15026
+#--------------------------------------------------------------
+tamwag_ABC123_cuid15026
+    ├── 20120416-CASSETTE-LL2-EOC.xls
+    ├── ReadMe.txt
+    ├── tamwag_ABC123_20151106.xlsx
+    ├── tamwag_ABC123_cuid15026_000001_d.wav
+    ├── tamwag_ABC123_cuid15026_000001_m.wav
+    ├── tamwag_ABC123_cuid15026_000002_d.wav
+    └── tamwag_ABC123_cuid15026_000002_m.wav
+
+```
 ```
 A/V File Naming Template (no "Content-Split", with "version" option): 
 
