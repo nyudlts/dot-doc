@@ -1,24 +1,35 @@
 ## Preservation Media Lab A/V naming template
 
-### Current Template:
+### Current Template:  
 
 Given the following resource in ArchivesSpace:
 
-![An image of an ArchivesSpace Resource Identifier with four fields: id_0 through id_3](../images/images/aspace-resource-identifier.png)
+![](./images/aspace-resource-id_0-id_3.jpg)
 
-Here is my understanding of the final template:
+And this template:
+```
+  <pc>_<id_0><id_1>[-<id_2>][-<id_3>]_<cuid value>
+  
+  (note that there is no delimiter between id_0 and id_1)
+```
+```
+where:
+ <xyz> : indicates a field to be populated with a value  
+ [abc] : indicates a portion of the template that only needs to be 
+         populated if the corresponding id_2 and id_3 fields have values  
 
-`<partner code (lowercase)>_<id_0 in upper or lower case><id_1>[-<id_2>][-<id_3 with any dots (.) converted to dashes (-)>]_<cuid value>`  
-`^------------------------^_^---------------------------^^----^^-------^^-------------------------------------------------^_^----------^`  
-`                                      (note no delimiter between id_0 and id_1)`  
+and:
+ <pc>   is the partner code (lowercase)
+ <id_0> is the id_0 value in upper OR lower case
+ <id_3> is the id_3 value with any dots (.) converted to dashes (-)
+```
 
-e.g.,  
-`nyuarchives_RG7-3-1-1_cuid18795`
+Then a digitization ID for an item in this collection could be:  
+`using uppercase id_0 --> nyuarchives_RG7-3-1-1_cuid18795`  
+or   
+`using lowercase id_0 --> nyuarchives_rg7-3-1-1_cuid18795`  
 
-where:  
-`<xyz>` indicates a field to be populated with a value  
-`[abc]` indicates a portion of the template that only needs to be populated if the corresponding id_2 and id_3 fields have values  
-
+---
 
 #### NOTE:
 * When renaming creating a directory and naming content files within that directory,  
