@@ -2,6 +2,24 @@
 
 ### Current Template:
 
+Given the following resource in ArchivesSpace:
+
+![An image of an ArchivesSpace Resource Identifier with four fields: id_0 through id_3](../images/images/aspace-resource-identifier.png)
+
+Here is my understanding of the final template:
+
+`<partner code (lowercase)>_<id_0 in upper or lower case><id_1>[-<id_2>][-<id_3 with any dots (.) converted to dashes (-)>]_<cuid value>`  
+`^------------------------^_^---------------------------^^----^^-------^^-------------------------------------------------^_^----------^`  
+`                                      (note no delimiter between id_0 and id_1)`  
+
+e.g.,  
+`nyuarchives_RG7-3-1-1_cuid18795`
+
+where:  
+`<xyz>` indicates a field to be populated with a value  
+`[abc]` indicates a portion of the template that only needs to be populated if the corresponding id_2 and id_3 fields have values  
+
+
 #### NOTE:
 * When renaming creating a directory and naming content files within that directory,  
   **the beginning of the content filenames must match the directory name**.
