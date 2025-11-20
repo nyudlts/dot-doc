@@ -32,7 +32,7 @@ or
 ---
 
 #### NOTE:
-* When renaming creating a directory and naming content files within that directory,  
+* When creating a directory and naming content files within that directory,  
   **the beginning of the content filenames must match the directory name**.
   e.g.,
 ```
