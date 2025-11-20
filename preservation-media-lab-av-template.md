@@ -107,17 +107,17 @@ where:
 | file name                            | archival  | sequence | file     | take/   | file   | file |
 |                                      | object    | id       | sequence | version | role   | ext  |
 |--------------------------------------+-----------+----------+----------+---------+--------+------|
-| tamwag_TAM-709_cuid168A_000001_d.wav | cuid168   | A        | 1        | n/a     | dmaker | wav  |
-| tamwag_TAM-709_cuid168A_000001_m.wav | "         | "        | "        | "       | master | "    |
+| tamwag_TAM709_cuid168A_000001_d.wav  | cuid168   | A        | 1        | n/a     | dmaker | wav  |
+| tamwag_TAM709_cuid168A_000001_m.wav  | "         | "        | "        | "       | master | "    |
 |                                      |           |          |          |         |        |      |
-| tamwag_TAM-709_cuid168A_000002_d.wav | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM-709_cuid168A_000002_m.wav | "         | "        | "        | "       | master | "    |
+| tamwag_TAM709_cuid168A_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168A_000002_m.wav  | "         | "        | "        | "       | master | "    |
 |                                      |           |          |          |         |        |      |
-| tamwag_TAM-709_cuid168B_000001_d.wav | "         | B        | 1        | "       | dmaker | "    |
-| tamwag_TAM-709_cuid168B_000001_m.wav | "         | "        | "        | "       | master | "    |
+| tamwag_TAM709_cuid168B_000001_d.wav  | "         | B        | 1        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168B_000001_m.wav  | "         | "        | "        | "       | master | "    |
 |                                      |           |          |          |         |        |      |
-| tamwag_TAM-709_cuid168B_000002_d.wav | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM-709_cuid168B_000002_m.wav | "         | "        | "        | "       | master | "    |
+| tamwag_TAM709_cuid168B_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168B_000002_m.wav  | "         | "        | "        | "       | master | "    |
 |                                      |           |          |          |         |        |      |
 | fales_mss231_cuid45678_m.mov         | cuid45678 | n/a      | n/a      | n/a     | master | mov  |
 | fales_mss231_cuid45678_d.mov         | "         | "        | "        | "       | dmaker | "    |
