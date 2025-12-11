@@ -88,6 +88,79 @@ A/V File Naming Template (no "Content-Split", with "version" option):
 
 The naming template at the time of this writing is:
 
+    <pc>_<ci>_<aoi>[_<fs>][_<tv>]_<fr>.<fe>
+
+where:
+    pc  = partner code
+    ci  = collection identifier
+    aoi = archival object ID
+    fs  = file sequence, e.g., 000001 -> tape side A, 000002 -> tape side B [optional]
+    tv  = take/version indicating different attempts at digitizing an asset [optional]
+    fr  = file role, e.g., master, derivative maker (mezzanine)
+    fe  = file extension
+
+
+|-------------------------------------+-----------+----------+----------+---------+--------+------|
+|                                     |           | source   |          |         |        |      |
+|                                     |           | item     |          |         |        |      |
+| file name                           | archival  | sequence | file     | take/   | file   | file |
+|                                     | object    | id       | sequence | version | role   | ext  |
+|-------------------------------------+-----------+----------+----------+---------+--------+------|
+| tamwag_TAM709_cuid168_000001_d.wav  | cuid168   | A        | 1        | n/a     | dmaker | wav  |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
+|                                     |           |          |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
+|                                     |           |          |          |         |        |      |
+| tamwag_TAM709_cuid168_000001_d.wav  | "         | B        | 1        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
+|                                     |           |          |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
+|                                     |           |          |          |         |        |      |
+| fales_mss231_cuid45678_m.mov        | cuid45678 | n/a      | n/a      | n/a     | master | mov  |
+| fales_mss231_cuid45678_d.mov        | "         | "        | "        | "       | dmaker | "    |
+|                                     |           |          |          |         |        |      |
+| fales_mss547_cuid41188_v1_m.mov     | cuid41188 | n/a      | n/a      | take 1  | master | mov  |
+| fales_mss547_cuid41188_v1_d.mov     | "         | "        | "        | "       | dmaker | "    |
+|                                     |           |          |          |         |        |      |
+| fales_mss547_cuid41188_v2_m.mov     | "         | n/a      | n/a      | take 2  | master | mov  |
+| fales_mss547_cuid41188_v2_d.mov     | "         | "        | "        | "       | dmaker | "    |
+|-------------------------------------+-----------+----------+----------+---------+--------+------|
+* the "take/version" field is used to differentiate digitization passes of the same source asset.
+  v1 denotes the first  attempt at digitizing the asset
+  v2 denotes the second attempt at digitizing the asset
+  ...
+```
+
+
+##
+### HDV Template and Package Structure:
+
+Notes:  
+
+* There are multiple master files per dmaker file
+* The master file index starts with `000000`
+
+```text
+tamwag_tam222_cuid24601
+     ↳ 20250920-HDV_Sony_HVRM25AU-LL2-EOC.xls [environment-of-creation file]
+     ↳ tamwag_tam222_cuid24601_d.mpg          [1920x1080 MPEG-2, combining all _m files]
+     ↳ tamwag_tam222_cuid24601_000000_m.m2t   [native 1440x1080 MPEG-2 video clips] 
+     ↳ tamwag_tam222_cuid24601_000001_m.m2t
+     ↳ tamwag_tam222_cuid24601_000002_m.m2t
+     ↳ tamwag_tam222_cuid24601_000003_m.m2t
+     ↳ tamwag_tam222_cuid24601_000004_m.m2t
+     ↳ tamwag_tam222_cuid24601_s.mp4          [1920x1080 H264, same video content as _d]
+```
+
+##
+### Legacy Templates:
+```
+A/V File Naming Template (no "Content-Split", with "version" option): 
+
+The naming template at the time of this writing is:
+
     <pc>_<ci>_<aoi>[<sis>][_<fs>][_<tv>]_<fr>.<fe>
 
 where:
@@ -133,30 +206,7 @@ where:
   v2 denotes the second attempt at digitizing the asset
   ...
 ```
-
-
-##
-### HDV Template and Package Structure:
-
-Notes:  
-
-* There are multiple master files per dmaker file
-* The master file index starts with `000000`
-
-```text
-tamwag_tam222_cuid24601
-     ↳ 20250920-HDV_Sony_HVRM25AU-LL2-EOC.xls [environment-of-creation file]
-     ↳ tamwag_tam222_cuid24601_d.mpg          [1920x1080 MPEG-2, combining all _m files]
-     ↳ tamwag_tam222_cuid24601_000000_m.m2t   [native 1440x1080 MPEG-2 video clips] 
-     ↳ tamwag_tam222_cuid24601_000001_m.m2t
-     ↳ tamwag_tam222_cuid24601_000002_m.m2t
-     ↳ tamwag_tam222_cuid24601_000003_m.m2t
-     ↳ tamwag_tam222_cuid24601_000004_m.m2t
-     ↳ tamwag_tam222_cuid24601_s.mp4          [1920x1080 H264, same video content as _d]
-```
-
-##
-### Legacy Template:
+---
 ```
 "Content-Split" File Naming Template: 
 
@@ -196,3 +246,13 @@ Example: fales/mss326:
     "Content-Split" naming template is no longer used.
 ```
 
+---
+```
+revision history:
+
+2025-12-11 : move old template to "Legacy Templates" section.  
+             remove "source item sequence identifier" <sis> field from naming template  
+			 
+2025-11-20  : add information on creating a digitization ID from the  
+              ArchivesSpace resource identifier
+```
