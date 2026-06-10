@@ -111,33 +111,36 @@ where:
     fr  = file role, e.g., master, derivative maker (mezzanine)
     fe  = file extension
 
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
-|                                     |           | source   |          |         |        |      |
-|                                     |           | item     |          |         |        |      |
-| file name                           | archival  | sequence | file     | take/   | file   | file |
-|                                     | object    | id       | sequence | version | role   | ext  |
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
-| tamwag_TAM709_cuid168_000001_d.wav  | cuid168   | A        | 1        | n/a     | dmaker | wav  |
-| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000001_d.wav  | "         | B        | 1        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss231_cuid45678_m.mov        | cuid45678 | n/a      | n/a      | n/a     | master | mov  |
-| fales_mss231_cuid45678_d.mov        | "         | "        | "        | "       | dmaker | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss547_cuid41188_v1_m.mov     | cuid41188 | n/a      | n/a      | take 1  | master | mov  |
-| fales_mss547_cuid41188_v1_d.mov     | "         | "        | "        | "       | dmaker | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss547_cuid41188_v2_m.mov     | "         | n/a      | n/a      | take 2  | master | mov  |
-| fales_mss547_cuid41188_v2_d.mov     | "         | "        | "        | "       | dmaker | "    |
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
+|-------------------------------------+-----------+----------+---------+--------+------|
+|                                     |           |          |         |        |      |
+|                                     |           |          | take/   |        |      |
+| file name                           | archival  | file     | version,| file   | file |
+|                                     | object    | sequence | track   | role   | ext  |
+|-------------------------------------+-----------+----------+---------+--------+------|
+| tamwag_TAM709_cuid168_000001_d.wav  | cuid168   | 1        | n/a     | dmaker | wav  |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000001_d.wav  | "         | 1        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| fales_mss231_cuid45678_m.mov        | cuid45678 | n/a      | n/a     | master | mov  |
+| fales_mss231_cuid45678_d.mov        | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid41188_v1_m.mov     | cuid41188 | n/a      | take 1  | master | mov  |
+| fales_mss547_cuid41188_v1_d.mov     | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid41188_v2_m.mov     | "         | n/a      | take 2  | master | mov  |
+| fales_mss547_cuid41188_v2_d.mov     | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid09875_tr01_m.wav   | cuid09875 | n/a      | track 1 | master | mov  |
+| fales_mss547_cuid09875_tr02_m.wav   | "         | n/a      | track 2 | master | mov  |
+|-------------------------------------+-----------+----------+---------+--------+------|
 * the "take/version" field is used to differentiate digitization passes of the same source asset.
   v1 denotes the first  attempt at digitizing the asset
   v2 denotes the second attempt at digitizing the asset
