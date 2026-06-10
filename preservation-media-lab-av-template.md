@@ -1,18 +1,22 @@
 ## Preservation Media Lab A/V naming template
 
-### Current Template:  
+### Current Template  
+
+#### ArchivesSpace `Component Unique Identifiers` and `digitization ID`s
 
 Given the following resource in ArchivesSpace:
 
-![](./images/aspace-resource-id_0-id_3.jpg)
+![an image showing an example component unique identifer in ArchivesSpace](./images/aspace-resource-id_0-id_3.jpg)
 
 And this template:
-```
+
+```text
   <pc>_<id_0><id_1>[-<id_2>][-<id_3>]_<cuid value>
   
   (note that there is no delimiter between id_0 and id_1)
 ```
-```
+
+```text
 where:
  <xyz> : indicates a field to be populated with a value  
  [abc] : indicates a portion of the template that only needs to be 
@@ -26,16 +30,17 @@ and:
 
 Then a digitization ID for an item in this collection could be:  
 `using uppercase id_0 --> nyuarchives_RG7-3-1-1_cuid18795`  
-or   
+or  
 `using lowercase id_0 --> nyuarchives_rg7-3-1-1_cuid18795`  
 
----
+#### NOTE: letter case in `digitization ID`s and directory names
 
-#### NOTE:
 * When creating a directory and naming content files within that directory,  
   **the beginning of the content filenames must match the directory name**.
-  e.g.,
-```
+  
+e.g.,
+
+```text
 #--------------------------------------------------------------
 # NOT GOOD:
 # mismatch between directory name : tamwag_ABC123_cuid15026
@@ -83,12 +88,17 @@ tamwag_ABC123_cuid15026
     └── tamwag_ABC123_cuid15026_000002_m.wav
 
 ```
-```
-A/V File Naming Template (no "Content-Split", with "version" option): 
+
+---
+
+#### A/V File Naming Template (no "Content-Split", with "version" and "track" options)
+
+```text
+A/V File Naming Template (no "Content-Split", with "version" and "track" options): 
 
 The naming template at the time of this writing is:
 
-    <pc>_<ci>_<aoi>[_<fs>][_<tv>]_<fr>.<fe>
+    <pc>_<ci>_<aoi>[_<fs>][_<tv>][_<tr>]_<fr>.<fe>
 
 where:
     pc  = partner code
@@ -96,45 +106,71 @@ where:
     aoi = archival object ID
     fs  = file sequence, e.g., 000001 -> tape side A, 000002 -> tape side B [optional]
     tv  = take/version indicating different attempts at digitizing an asset [optional]
+    tr  = track number for multi-track recordings, 
+          e.g., track 1 --> tr01, track 2 --> tr02, ...                     [optional] 
     fr  = file role, e.g., master, derivative maker (mezzanine)
     fe  = file extension
 
-
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
-|                                     |           | source   |          |         |        |      |
-|                                     |           | item     |          |         |        |      |
-| file name                           | archival  | sequence | file     | take/   | file   | file |
-|                                     | object    | id       | sequence | version | role   | ext  |
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
-| tamwag_TAM709_cuid168_000001_d.wav  | cuid168   | A        | 1        | n/a     | dmaker | wav  |
-| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000001_d.wav  | "         | B        | 1        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| tamwag_TAM709_cuid168_000002_d.wav  | "         | "        | 2        | "       | dmaker | "    |
-| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "        | "       | master | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss231_cuid45678_m.mov        | cuid45678 | n/a      | n/a      | n/a     | master | mov  |
-| fales_mss231_cuid45678_d.mov        | "         | "        | "        | "       | dmaker | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss547_cuid41188_v1_m.mov     | cuid41188 | n/a      | n/a      | take 1  | master | mov  |
-| fales_mss547_cuid41188_v1_d.mov     | "         | "        | "        | "       | dmaker | "    |
-|                                     |           |          |          |         |        |      |
-| fales_mss547_cuid41188_v2_m.mov     | "         | n/a      | n/a      | take 2  | master | mov  |
-| fales_mss547_cuid41188_v2_d.mov     | "         | "        | "        | "       | dmaker | "    |
-|-------------------------------------+-----------+----------+----------+---------+--------+------|
+|-------------------------------------+-----------+----------+---------+--------+------|
+|                                     |           |          |         |        |      |
+|                                     |           |          | take/   |        |      |
+| file name                           | archival  | file     | version,| file   | file |
+|                                     | object    | sequence | track   | role   | ext  |
+|-------------------------------------+-----------+----------+---------+--------+------|
+| tamwag_TAM709_cuid168_000001_d.wav  | cuid168   | 1        | n/a     | dmaker | wav  |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000001_d.wav  | "         | 1        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000001_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| tamwag_TAM709_cuid168_000002_d.wav  | "         | 2        | "       | dmaker | "    |
+| tamwag_TAM709_cuid168_000002_m.wav  | "         | "        | "       | master | "    |
+|                                     |           |          |         |        |      |
+| fales_mss231_cuid45678_m.mov        | cuid45678 | n/a      | n/a     | master | mov  |
+| fales_mss231_cuid45678_d.mov        | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid41188_v1_m.mov     | cuid41188 | n/a      | take 1  | master | mov  |
+| fales_mss547_cuid41188_v1_d.mov     | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid41188_v2_m.mov     | "         | n/a      | take 2  | master | mov  |
+| fales_mss547_cuid41188_v2_d.mov     | "         | "        | "       | dmaker | "    |
+|                                     |           |          |         |        |      |
+| fales_mss547_cuid09875_tr01_m.wav   | cuid09875 | n/a      | track 1 | master | mov  |
+| fales_mss547_cuid09875_tr02_m.wav   | "         | n/a      | track 2 | master | mov  |
+|-------------------------------------+-----------+----------+---------+--------+------|
 * the "take/version" field is used to differentiate digitization passes of the same source asset.
   v1 denotes the first  attempt at digitizing the asset
   v2 denotes the second attempt at digitizing the asset
   ...
 ```
 
+---
 
-##
+### File Packaging for DV Packages
+
+```text
+We have to capture DV now in a PC environment (because of Mac OS "updates" that forbid video over  
+FireWire, and NYU security requirements that forbid older Macs,) our capture files are AVI.  
+
+Decision was made to keep the AVI for the _m files, rewrapping (and compiling as needed) to MOV  
+for the _d, and keeping the same H.264 _s file.  
+
+Example for tamwag_tam111_cuid10086
+     ↳ 20250920-HDV_Sony_HVRM25AU-LL2-EOC.xls
+     ↳ tamwag_tam111_cuid10086_000001_m.avi [native 720x480 DV25 video clips]
+     ↳ tamwag_tam111_cuid10086_000002_m.avi
+     ↳ tamwag_tam111_cuid10086_000003_m.avi
+     ↳ tamwag_tam111_cuid10086_000004_m.avi
+     ↳ tamwag_tam111_cuid10086_000005_m.avi
+     ↳ tamwag_tam111_cuid10086_d.mov [720x480 DV25, combining all _m files]
+     ↳ tamwag_tam111_cuid10086_s.mp4 [720x540 H264, same video content as _d]
+```
+
+---
+
 ### HDV Template and Package Structure:
 
 Notes:  
